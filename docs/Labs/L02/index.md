@@ -9,3 +9,6 @@ What is infill strategy in FDM 3D printing, and how does a designer use it to op
 
 Answer:
 Infill strategy determines the internal structure and density of a 3D printed part, directly controlling its stiffness, weight, and overall pressure tolerance. Designers work around this by customizing both the infill percentage and geometric pattern (such as grid or gyroid) based on the specific mechanical requirements and intended use of the part.
+
+Group Share Info:
+They are focusing on the overhang supports. 
