@@ -43,9 +43,9 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 * **Supports:** None needed due to the low profile and flat geometry.
 * **Scaling:** Scaled down slightly in PrusaSlicer to guarantee it stayed strictly under the 2x2 inch footprint limits.
 
-(docs/Labs/L02/Gcode Slice.png)
+![Gcode Slice](Gcode%20Slice.png)
 
-(docs/Labs/L02/Print Settings.png)
+![Print Settings](Print%20Settings.png)
 
 ---
 
@@ -57,9 +57,12 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 
 
 
-(docs/Labs/L02/Lab 2 FDM footage.mp4)
+<video width="100%" controls>
+  <source src="Lab%202%20FDM%20footage.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-(docs/Labs/L02/IMG_9393.JPG)
+![Final Print](IMG_9393.JPG)
 
 ---
 
