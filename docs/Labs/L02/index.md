@@ -1,4 +1,5 @@
-Lab Class participation:
+#Lab Class participation:
+
 Question:
 What is one design rule or guideline specific to Design for Additive Manufacturing (DfAM), what does it mean, and why does it matter?
 
@@ -51,7 +52,7 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 
 ## Print
 
-* **Printer Used:** UNCC Print Farm Printer #[18]
+* **Printer Used:** UNCC Print Farm Printer #18
 * **Print Partner(s):** Worked with [Partner Name(s) (forgot)] to combine our models on a single build plate to save time and share printer access.
 * **Material Used:** PLA
 
@@ -73,12 +74,12 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 3. **Flat Surfaces Simplify Slicing:** Selecting a model with a flat bottom surface eliminates the need for supports and significantly improves bed adhesion.
 4. **Print Time Management:** Preparing g-code efficiently ahead of time ensured our overall print time stayed well under the 1.5-hour limit.
 
-* **Total Time Taken:** Approximately [13] minutes from downloading the file to holding the finished print.
-* **Acknowledgments:** Thanks to [Profesor Fagan] for coordinating on the build plate layout and the lab staff for printer access.
+* **Total Time Taken:** Approximately 13 minutes from downloading the file to holding the finished print.
+* **Acknowledgments:** Thanks to Professor Fagan for coordinating on the build plate layout and the lab staff for printer access.
 
 ---
 
 ## Resources
 
 * [Bird Door Stopper on Printables](https://www.printables.com/model/624315-bird-door-stopper/files)
-* [PrusaSlicer Documentation](https://help.prusa3d.com/)
+* [PrusaSlicer Documentation]([https://help.prusa3d.com](https://uncc.instructure.com/eportfolios/2988/Assignments/Make_Something_Small))
