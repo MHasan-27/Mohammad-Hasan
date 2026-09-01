@@ -24,7 +24,7 @@ For this project, I chose to print the [Bird Door Stopper](https://www.printable
 ### Why I Selected This Model
 
 * It has a flat base, which makes it stable on the build plate without needing complex support structures.
-* The dimensions fit well within the assignment constraints (under $0.25\text{ inches}$ tall, max $2 \times 2\text{ inches}$).
+* The dimensions fit well within the assignment constraints (under 0.25 inches tall, max 2 X 2 inches).
 * The design is simple and practical for a quick FDM print test.
 
 
@@ -43,9 +43,9 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 * **Supports:** None needed due to the low profile and flat geometry.
 * **Scaling:** Scaled down slightly in PrusaSlicer to guarantee it stayed strictly under the 2x2 inch footprint limits.
 
-*(docs/Labs/L02/Gcode Slice.png)*
+(docs/Labs/L02/Gcode Slice.png)
 
-*(docs/Labs/L02/Print Settings.png)*
+(docs/Labs/L02/Print Settings.png)
 
 ---
 
@@ -57,9 +57,9 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 
 
 
-*(docs/Labs/L02/Lab 2 FDM footage.mp4)*
+(docs/Labs/L02/Lab 2 FDM footage.mp4)
 
-*(docs/Labs/L02/IMG_9393.JPG)*
+(docs/Labs/L02/IMG_9393.JPG)
 
 ---
 
