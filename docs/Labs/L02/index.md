@@ -82,4 +82,4 @@ I imported the STL file into PrusaSlicer to prepare the model for printing with 
 ## Resources
 
 * [Bird Door Stopper on Printables](https://www.printables.com/model/624315-bird-door-stopper/files)
-* [PrusaSlicer Documentation]([https://help.prusa3d.com](https://uncc.instructure.com/eportfolios/2988/Assignments/Make_Something_Small))
+* [PrusaSlicer Documentation](https://uncc.instructure.com/eportfolios/2988/Assignments/Make_Something_Small)
