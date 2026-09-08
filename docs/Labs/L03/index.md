@@ -59,7 +59,7 @@ Models were arranged in PrusaSlicer to combine multiple parts on a single platfo
 - **Stipulation Verification:** Verified dimensions ($1.5'' \times 1.5'' \times 0.5''$), zero overhangs, PLA material, and modified wall parameters.
 - **Video Demonstration:** [Link to GitHub video showing 3D operation/part]
 
-*Insert photos of final printed Cable Organizer here*
+![Final Print](Final%20Print.png)
 
 ---
 
