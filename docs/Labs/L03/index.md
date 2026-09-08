@@ -47,7 +47,9 @@ Models were arranged in PrusaSlicer to combine multiple parts on a single platfo
 - **Scaling:** None required (designed natively to meet size limits).
 - **G-Code File Link:** [Lab 3 Gcode Slice](https://github.com/MHasan-27/Mohammad-Hasan/blob/main/docs/Labs/L03/Lab%203%20Mohammad%20Brayan%20Ameer%20Noah_0.4n_0.2mm_PLA_COREONE_22m.bgcode)
 
-*Insert PrusaSlicer slice layout screenshot (`Lab 3 Slice.png`) and settings screenshot (`Lab 3 Print Settings.png`) here*
+![Lab 3 Slice](Lab%203%20Slice.png)
+
+![Lab 3 Print Settings](Lab%203%20Print%20Settings.png)
 
 ---
 
