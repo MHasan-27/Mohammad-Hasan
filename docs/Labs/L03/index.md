@@ -70,10 +70,11 @@ Models were arranged in PrusaSlicer to combine multiple parts on a single platfo
 2. **Perimeter vs. Infill Balance:** Increasing wall thickness to 3 perimeters provided greater shell stiffness than simply cranking up the infill percentage, optimizing print speed and structural integrity simultaneously.
 3. **Flat Base Geometry Benefits:** Designing the cable organizer with a flat bottom ensured superior bed adhesion on the Prusa CORE One bed without requiring additional brim or support enforcers.
 
+
 ### Reflection & Critical Analysis
-- **Scaling Up Consequences:** If a low-infill, thin-wall configuration were scaled up to a load-bearing or safety-critical engineering component (such as an automotive bracket or industrial mount), the part could experience catastrophic shear failure under load due to insufficient internal stress distribution.
-- **Mistakes Caught & Prevented:** During initial slicing, ensure part spacing prevents collision during rapid head moves. Checking the G-code preview visually ensured clearance between all four team members' models prior to launching the job.
-- **Real-World Parallel:** In commercial electronics enclosures (like router casings or power supply housings), engineers select specific shell wall thicknesses and internal ribbing (analogous to infill) to provide impact protection and heat dissipation while keeping manufacturing costs low.
+- **Scaling Up Consequences:** Scaling low infill and thin walls to load-bearing parts (e.g., auto brackets) risks sudden shear failure from poor internal stress distribution.
+- **Mistakes Caught & Prevented:** Visually checking the G-code preview ensured safe spacing and prevented toolhead collisions between all four team members' models.
+- **Real-World Parallel:** Commercial electronics enclosures use specific wall thicknesses and internal ribbing (like infill) for impact strength and lower costs.
 
 ---
 
