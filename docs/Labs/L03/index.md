@@ -1,14 +1,18 @@
 # Lab 3: Design Something Small
 
 ## Design
-For this lab assignment, I designed a compact, custom **Cable Organizer** using parametric CAD software. The design features tailored slots to secure desktop cables cleanly while adhering strictly to all assignment geometric constraints.
+For this lab assignment, I designed a compact, custom **Cable Organizer** using SolidWorks software. The design features tailored slots to secure desktop cables cleanly while adhering strictly to all assignment geometric constraints.
 
-- **Dimensions:** 1.5 in x 1.5 in x 0.5 in ($38.1\text{ mm} \times 38.1\text{ mm} \times 12.7\text{ mm}$)
+- **Dimensions:** 1.5 in x 1.5 in x 0.5 in 
 - **Overhangs:** None (designed with 0° overhang angles to eliminate the need for print supports)
 - **CAD File Link:** [Lab 3 Mohammad Hasan.SLDPRT](https://github.com/MHasan-27/Mohammad-Hasan/blob/main/docs/Labs/L03/Lab%203%20Mohammad%20Hasan.SLDPRT)
 - **STL File Link:** [Lab 3 Mohammad Hasan.STL](https://github.com/MHasan-27/Mohammad-Hasan/blob/main/docs/Labs/L03/Lab%203%20Mohammad%20Hasan.STL)
 
-*Insert CAD design process screenshots here*
+<img width="1350" height="996" alt="image" src="https://github.com/user-attachments/assets/f489631d-eedd-407d-b36a-5d1c47d74758" />
+<img width="1271" height="702" alt="image" src="https://github.com/user-attachments/assets/913151ff-a995-4a26-b6c6-df417498c474" />
+<img width="1352" height="822" alt="image" src="https://github.com/user-attachments/assets/b2cbda98-c6be-4e2d-854d-e80f323894f2" />
+<img width="1362" height="802" alt="image" src="https://github.com/user-attachments/assets/ab15c51f-1156-4d4f-87c2-3c97979cf94c" />
+
 
 ---
 
