@@ -57,7 +57,9 @@ Models were arranged in PrusaSlicer to combine multiple parts on a single platfo
 - **Group Execution:** Worked in a team of 4 (Mohammad, Brayan, Ameer, and Noah) to batch print our individual parts on a single build bed.
 - **Estimated & Actual Print Time:** **22 minutes** total for all 4 parts combined (well under the 1.5-hour maximum constraint).
 - **Stipulation Verification:** Verified dimensions ($1.5'' \times 1.5'' \times 0.5''$), zero overhangs, PLA material, and modified wall parameters.
-- **Video Demonstration:** [Link to GitHub video showing 3D operation/part]
+<video src="Printing%20Video.mp4" controls width="100%"></video>
+
+![Infill, Type, and Wall Layer](Infill,%20type,%20and%20Wall%20Layer%20.png)
 
 ![Final Print](Final%20Print.png)
 
@@ -79,3 +81,4 @@ Models were arranged in PrusaSlicer to combine multiple parts on a single platfo
 - SolidWorks CAD Software
 - [PrusaSlicer Manual & Documentation](https://help.prusa3d.com/)
 - UNCC Print Farm Facilities & Equipment Guidance
+- AI Assistance (Gemini) was used to format the lab documentation into GitHub-flavored Markdown, organize image/video file links, and refine structural technical explanations.
