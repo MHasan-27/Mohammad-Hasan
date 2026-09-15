@@ -140,7 +140,7 @@ Each feature was measured using digital calipers. Note that the average base hei
 | **Hole 4** | 10.30 | 10.14 | -1.55% |
 | **Hole 5** | 10.40 | 10.28 | -1.15% |
 
-*(Percentage Off calculated using standard formula: $\frac{\text{Actual} - \text{Design}}{\text{Design}} \times 100$)*
+*(Percentage Off calculated using standard formula: (Actual-Design)/Design *100 %)*
 
 ***
 
