@@ -49,22 +49,23 @@ I chose my slicer settings in PrusaSlicer deliberately to balance dimensional st
 
 The part was sliced using PrusaSlicer for PLA on the Prusa Core One:
 
-* **Infill:** 15% Gyroid infill was selected to give uniform multi-directional strength while keeping the print time under the 1-hour limit.
+* **Infill Choice:** 15% Gyroid infill was selected to give uniform multi-directional strength while keeping the print time under the 1-hour limit.
 
   ![Infill](Infill%20.png)
 
-* **Build Orientation & Supports:** The flat bottom face was seated directly on the build plate. This provided strong bed adhesion without requiring any print supports.
+* **Build Orientation & Supports:** The flat bottom face was seated directly on the build plate. This provided maximum surface contact and strong bed adhesion without requiring any print supports.
 
 * **Perimeters:** 3 perimeter walls provided solid outer boundaries so measuring with digital calipers would not flex the part.
 
   ![Layers and Perimeters](Layers%20and%20pperimeters.png)
 
+* **Scaling:** No scaling was required (100% scale) because the part was designed from the beginning to fit on the build bed and meet print time constraints.
+
 * **Slicing Preview:**
 
   ![Slice Preview](Slice%20privew%20.png)
 
-* **Slicer Adjustments:** The initial slicer settings estimated a print time slightly over 1 hour, so print speeds were increased slightly to stay within the machine time limit.
-
+* **Mistakes & Slicer Adjustments:** The initial slicer settings estimated a print time slightly over the 1-hour limit, so print speeds were slightly increased to meet the machine time requirement.
 ***
 
 ### Print Artifact
@@ -148,11 +149,11 @@ Each feature was measured using digital calipers. Note that the average base hei
 
 * **Outcome vs. Expectation:** My prediction was that all measurements would fall within 3% tolarance, which proved correct. All height errors stayed under +1.2% and all hole errors stayed under -1.9%. External heights consistently printed slightly oversized due to material thermal expansion, while internal holes printed undersized due to perimeter plastic contraction during cooling.
 * **Class Design Rules Comparison:** The Prusa Core One matched and exceeded standard FDM expectations for external features ( 0.3% to 1.2% tolarance). However, internal holes fell short of exact CAD dimensions due to inner diameter shrinkage, requiring clearance compensation in slicer settings or CAD design.
-* **Engineering Lessons Learned:**
-  1. High-precision parts are not ideal for standard FDM printing because plastic shrinkage affects internal diameters significantly.
-  2. FDM is best suited for rapid prototyping or non-critical parts that can handle reasonable loads without tight tolerances.
-  3. When designing holes for FDM printing, add offset clearances in CAD (or enable X-Y hole compensation in PrusaSlicer) to achieve accurate fitments.
-  4. Perimeter wall count affects external accuracy and strength far more than infill percentage.
+* **Detailed Lessons Learned (4 Specific Engineering Insights):**
+  1. **Internal Diameter Shrinkage:** High-precision holes are not ideal for standard FDM printing without offsets because plastic thermal contraction pulls inner walls inward, making holes consistently undersized.
+  2. **Prototyping Suitability:** FDM is best suited for rapid prototyping or non-critical parts that can handle reasonable loads without requiring tight dimensional fitments.
+  3. **CAD & Slicer Compensation:** When designing press-fit or pin-clearance holes for FDM, explicit dimensional clearance must be added in CAD (or X-Y hole compensation enabled in PrusaSlicer) to achieve target fitments.
+  4. **Perimeter Impact:** Increasing perimeter wall count improves exterior edge accuracy and measurement stiffness far more effectively than increasing internal infill percentage.
 * **Total Time Taken:** The total process took about 8 to 10 hours including brainstorming, studying requirements, CAD modeling, slicer setup, printing, measuring, and documentation.
 
 ***
