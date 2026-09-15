@@ -6,7 +6,7 @@
 
 ### Parameter
 
-I chose the **Tolerance Gauge Test** to benchmark the accuracy of the Prusa Core One. Since 3D printers typically have around a 3% tolerance limit, I predicted that all actual measurements would fall within $\pm 3\%$ of the design dimensions.
+I chose the **Tolerance Gauge Test** to benchmark the accuracy of the Prusa Core One. Since 3D printers typically have around a 3% tolerance limit, I predicted that all actual measurements would fall within 3% of the design dimensions.
 
 To test both height and hole dimensions on a single part, I designed an artifact with 10 measurement points:
 * **Height Measurement:** A 10mm base block with 5 circular beams extending upward at target heights of 10.0mm, 10.1mm, 10.2mm, 10.3mm, and 10.4mm (total nominal heights of 20.0mm to 20.4mm from the bottom surface).
@@ -21,7 +21,7 @@ I chose my slicer settings in PrusaSlicer deliberately to balance dimensional st
 
 **SolidWorks Design Steps:**
 
-* **Step 1:** Sketched a 100mm $\times$ 50mm rectangle on the top plane and extruded it by 10mm to create the base.
+* **Step 1:** Sketched a 100mm * 50mm rectangle on the top plane and extruded it by 10mm to create the base.
 
   ![Design Step 1](Design%20Step%201.png)
 
@@ -140,14 +140,14 @@ Each feature was measured using digital calipers. Note that the average base hei
 | **Hole 4** | 10.30 | 10.14 | -1.55% |
 | **Hole 5** | 10.40 | 10.28 | -1.15% |
 
-*(Percentage Off calculated using standard formula: (Actual-Design)/Design *100 %)*
+*(Percentage Off calculated using standard formula: (Actual-Design)/Design *100 %)
 
 ***
 
 ### Lessons Learned
 
-* **Outcome vs. Expectation:** My prediction was that all measurements would fall within $\pm 3\%$, which proved correct. All height errors stayed under $+1.2\%$ and all hole errors stayed under $-1.9\%$. External heights consistently printed slightly oversized due to material thermal expansion, while internal holes printed undersized due to perimeter plastic contraction during cooling.
-* **Class Design Rules Comparison:** The Prusa Core One matched and exceeded standard FDM expectations for external features ($\pm 0.3\%$ to $\pm 1.2\%$). However, internal holes fell short of exact CAD dimensions due to inner diameter shrinkage, requiring clearance compensation in slicer settings or CAD design.
+* **Outcome vs. Expectation:** My prediction was that all measurements would fall within 3% tolarance, which proved correct. All height errors stayed under +1.2% and all hole errors stayed under -1.9%. External heights consistently printed slightly oversized due to material thermal expansion, while internal holes printed undersized due to perimeter plastic contraction during cooling.
+* **Class Design Rules Comparison:** The Prusa Core One matched and exceeded standard FDM expectations for external features ( 0.3% to 1.2% tolarance). However, internal holes fell short of exact CAD dimensions due to inner diameter shrinkage, requiring clearance compensation in slicer settings or CAD design.
 * **Engineering Lessons Learned:**
   1. High-precision parts are not ideal for standard FDM printing because plastic shrinkage affects internal diameters significantly.
   2. FDM is best suited for rapid prototyping or non-critical parts that can handle reasonable loads without tight tolerances.
@@ -157,7 +157,6 @@ Each feature was measured using digital calipers. Note that the average base hei
 
 ***
 
-*The Bigger Picture*
 
 ### Resources
 
