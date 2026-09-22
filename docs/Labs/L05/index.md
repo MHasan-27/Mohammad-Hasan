@@ -61,82 +61,107 @@ On the side wall where the snap clip flexure arm engages, cut out a pocket using
 
 ## 2. Parametric Design & Mathematical Analysis
 
-### Mathematical Calculations & Engineering Equations
+### Material Properties & Initial Parameters
+* Material: 3D Printed PLA
+* Young's Modulus (E) = 3.5 GPa = 3,500 MPa = 507,632 psi
+* Yield Strength (sigma_y) = 60 MPa = 8,702 psi
+* Factor of Safety (SF) = 3.5
+* Allowable Stress (sigma_allow) = sigma_y / SF = 60 / 3.5 = 17.14 MPa (2,486 psi)
 
-To ensure structural integrity during engagement without exceeding the yield strain of 3D-printed PLA, cantilever flexure beam equations are applied below.
+### Given Dimensions & Load Conditions
+* Transverse Load (P) = 4 lbf = 17.79 N
+* Axial Load (F_axial) = 7.5 lbf = 33.36 N
+* Beam Length (l) = 50 mm = 1.9685 in
+* Beam Width / Base (b) = 15 mm = 0.5905 in
+* Max Deflection (Y) = 2.5 mm = 0.0984 in
+* Root Height (h_0) = 17.48 mm = 0.6882 in
+* Free End Height (h_l) = 8.74 mm = 0.3441 in (2:1 height taper ratio, h_l / h_0 = 0.5)
 
-#### A. Geometrical Parameters & Cross-Section Properties
-* Beam Length (L) = 50.0 mm
-* Flexure Width (b) = 15.0 mm
-* Base Thickness / Root Depth (h) = 3.0 mm
-* Engagement Hook Height / Deflection (y) = 2.5 mm
-* Yield Strain limit for 3D printed PLA (epsilon_allowable) = 0.015 (1.5%)
-* Modulus of Elasticity for PLA (E) = 2300 MPa
+---
 
-#### B. Moment of Inertia Equation
-The area moment of inertia (I) for the rectangular flexure arm cross-section is:
+### Tapered Beam Mechanics & Deflection Calculations
 
-I = (b * h^3) / 12
+For a rectangular cantilever beam with constant width b and linear height taper from h_0 at the fixed root to h_l at the free end, the deflection Y under a concentrated end load P is given by:
 
-I = (15.0 * (3.0)^3) / 12 = (15.0 * 27.0) / 12 = 33.75 mm^4
+Y = (6 * P * (l^3)) / (E * b * (h_0^3)) * K_K
 
-#### C. Maximum Mechanical Strain Equation
-The maximum strain (epsilon) occurring at the root base of the cantilever flexure arm is calculated as:
+Where K_K is the taper correction coefficient. For a tapered beam decreasing linearly to h_l = 0.5 * h_0, K_K is approximately 1.5.
 
-epsilon = (1.5 * h * y) / (L^2)
+#### Second Moment of Area at Root (I_0)
+I_0 = (b * (h_0^3)) / 12
 
-epsilon = (1.5 * 3.0 * 2.5) / (50.0^2)
-epsilon = 11.25 / 2500.0 = 0.0045 (0.45%)
+I_0 = (15 * (17.48^3)) / 12 = (15 * 5339.44) / 12 = 6,674.3 mm^4
 
-**Result:** Since the calculated strain of 0.45% is significantly less than the material allowable strain of 1.5% (epsilon < epsilon_allowable), the cantilever arm deforms purely elastically without permanent yield deformation.
+#### Deflection Check (Y)
+Y = (1.5 * P * (l^3)) / (3 * E * I_0)
 
-#### D. Maximum Bending Stress Equation
-The maximum bending stress (sigma) developed at the root of the flexure arm is calculated using Hooke's Law:
+Y = (1.5 * 17.79 * (50^3)) / (3 * 3500 * 6674.3)
+Y = (1.5 * 17.79 * 125000) / (70080150) = 333562.5 / 70080150 = 0.048 mm
 
-sigma = E * epsilon
+Result: Since the actual structural root height of 17.48 mm provides high stiffness (Y = 0.048 mm, which is well below the 2.5 mm engagement limit), bending stresses remain well within safe limits.
 
-sigma = 2300 * 0.0045 = 10.35 MPa
+---
 
-#### E. Engagement Deflection Force Equation
-The perpendicular force (P) required to deflect the beam tip by 2.5 mm is:
+### Stress Analysis & Verification
 
-P = (3 * E * I * y) / (L^3)
+#### A. Bending Stress at Root (sigma_b)
+The maximum bending moment M occurs at the fixed root:
 
-P = (3 * 2300 * 33.75 * 2.5) / (50.0^3)
-P = 583031.25 / 125000.0 = 4.66 N
+M = P * l = 17.79 * 50 = 889.5 N*mm
 
-#### F. Assembly Mating Push Force Equation
-Taking into account the friction coefficient (mu = 0.3) and a lead angle (alpha = 30 degrees):
+Distance to Neutral Axis (c) = h_0 / 2 = 17.48 / 2 = 8.74 mm
 
-tan_alpha = 0.577
+sigma_b = (M * c) / I_0
 
-W = P * (mu + tan_alpha) / (1 - (mu * tan_alpha))
+sigma_b = (889.5 * 8.74) / 6674.3 = 7774.23 / 6674.3 = 1.165 MPa (169 psi)
 
-W = 4.66 * (0.3 + 0.577) / (1 - (0.3 * 0.577))
-W = 4.66 * (0.877) / (1 - 0.1731)
-W = 4.087 / 0.8269 = 4.94 N
+Verification: sigma_b (1.165 MPa) < sigma_allow (17.14 MPa) --> PASS (Safe)
+
+#### B. Axial Stress (sigma_axial)
+During engagement or push-pull operation, the clip experiences an axial load of 33.36 N:
+
+Cross-Sectional Area at Root (A_0) = b * h_0 = 15 * 17.48 = 262.2 mm^2
+
+sigma_axial = F_axial / A_0
+
+sigma_axial = 33.36 / 262.2 = 0.127 MPa (18.4 psi)
+
+Verification: sigma_axial (0.127 MPa) << sigma_allow (17.14 MPa) --> PASS (Safe)
+
+#### C. Average Shear Stress on Protrusion (tau_avg)
+Assuming a snap lip height of 2.0 mm and an engagement depth (d_lip) of 3.0 mm:
+
+Shear Area (A_s) = b * d_lip = 15 * 3.0 = 45 mm^2
+
+tau_avg = P / A_s
+
+tau_avg = 17.79 / 45 = 0.395 MPa (57.3 psi)
+
+Allowable Shear Stress (tau_allow) = sigma_allow / 2 = 17.14 / 2 = 8.57 MPa
+
+Verification: tau_avg (0.395 MPa) << tau_allow (8.57 MPa) --> PASS (Safe)
 
 ---
 
 ### Parametric Design Questions & Answers
 
 1. **What are the parameters used?**
-   * Beam length (L = 50.0 mm), beam root thickness (h = 3.0 mm), beam width (b = 15.0 mm), tip deflection depth (y = 2.5 mm), and wall clearances (1.5 mm side / 2.9 mm top-bottom).
+   * Beam length (l = 50.0 mm), beam root height (h_0 = 17.48 mm), free end height (h_l = 8.74 mm), beam width (b = 15.0 mm), deflection depth (Y = 2.5 mm), and wall clearances (1.5 mm side / 2.9 mm top-bottom).
 
 2. **Why did you choose the specific parameters?**
-   * Dimensions were selected to ensure the maximum strain experienced during engagement remains under 0.5%, well below PLA's yield limit (1.5%), while maintaining a compact form factor for 3D printing.
+   * Dimensions were chosen to achieve a minimum Factor of Safety of 3.5, ensuring bending stress (1.165 MPa) and axial stress (0.127 MPa) remain far below the allowable stress threshold (17.14 MPa) of 3D-printed PLA.
 
 3. **What values did you choose for the specific parameters?**
-   * L = 50.0 mm, h = 3.0 mm, b = 15.0 mm, y = 2.5 mm, cover wall thickness = 1.5 mm, engagement length = 45.0 mm, and handle extension = 5.0 mm.
+   * l = 50.0 mm, h_0 = 17.48 mm, h_l = 8.74 mm, b = 15.0 mm, Y = 2.5 mm, cover wall thickness = 1.5 mm, engagement length = 45.0 mm, and handle extension = 5.0 mm.
 
 4. **Did the values change throughout the process? If so, why?**
-   * Yes, the thickness of the beam root was initially modeled thicker, but reduced to 3.0 mm to decrease the required insertion force and lower root stress concentrations.
+   * Yes, the root height was evaluated to ensure the tapered geometry maintained uniform stress distribution without exceeding allowable material strain under combined bending and push-pull axial loads.
 
 5. **Take many pictures of the different stages of the CAD model.**
    *(Images documented above under Section 1: Modeling)*
 
 6. **Detail the decision-making process and how you determined the engineered allowances of the interactive parts.**
-   * A nominal clearance allowance of 0.2 mm to 0.3 mm was specified between mating sliding surfaces to compensate for standard FDM printing dimensional swelling and layer line friction.
+   * A nominal clearance allowance of 0.2 mm to 0.3 mm was specified between sliding surfaces to account for FDM 3D printing dimensional tolerances and surface layer friction.
 
 7. **Take a picture of the overall design in CAD.**
 
@@ -146,15 +171,15 @@ W = 4.087 / 0.8269 = 4.94 N
 
 ## 3. Finite Element Analysis (FEA) & Simulation
 
-To validate the theoretical flexure calculations, Finite Element Analysis was performed using 3D-printed PLA material properties.
+To validate the analytical cantilever calculations, Finite Element Analysis was conducted in SolidWorks Simulation using 3D-printed PLA material properties.
 
 ### Material Selection
-PLA material properties were defined for the structural analysis setup.
+PLA material properties were assigned to match the structural analysis setup.
 
 ![Material Selection PLA](Material%20Selection%20PLA.png)
 
 ### Von Mises Stress Analysis
-The FEA results show maximum stress concentrations localized at the root of the cantilever flexure arm during engagement.
+The stress contour demonstrates maximum equivalent stresses located near the fixed root transition, confirming that values remain below the allowable yield limit.
 
 ![Stress Analysis](Stress%20(VonMises).png)
 
@@ -164,15 +189,14 @@ Maximum displacement occurs at the cantilever tip during engagement, matching th
 ![Displacement Analysis](Displacement.png)
 
 ### Deformation Plot
-The overall elastic deformation pattern demonstrates smooth flexure bending along the beam without critical strain concentration points.
+The elastic deformation plot verifies uniform bending along the tapered beam profile without unpredicted stress concentration points.
 
 ![Deformation Plot](Deformation.png)
 
-### Factor of Safety
-The structural analysis yields a minimum Factor of Safety of 3.5, confirming that the design easily withstands repeated snap engagement without risk of yield failure.
+### Factor of Safety Analysis
+The structural simulation confirms a minimum Factor of Safety of 3.5, validating that the design will sustain repeated engagement cycles without yielding.
 
 ![Factor of Safety](Factor%20of%20Safety%203.5.png)
-
 ---
 
 ## 4. 3D Printing and Testing Section
