@@ -217,7 +217,6 @@ In FDM 3D printing, anisotropic layer bonding dictates that parts are weakest ac
 
 <video src="Printing%20Video.mp4" controls width="100%"></video>
 
-*(Video demonstration of 3D printing the snap fit letters and functional testing will be placed here)*
 
 ## Resources
 
