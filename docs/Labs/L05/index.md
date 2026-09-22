@@ -218,3 +218,17 @@ In FDM 3D printing, anisotropic layer bonding dictates that parts are weakest ac
 *(Video demonstration of 3D printing the snap fit letters and functional testing will be placed here)*
 
 *(Video demonstration of 3D printing the snap fit letters and functional testing will be placed here)*
+
+## Resources
+
+* [Prusa Research: Read about Supports](https://help.prusa3d.com/article/supports_1786)[cite: 1]
+* [Prusa YouTube: Organic Supports](https://www.youtube.com/watch?v=0k93N9Ea45E)[cite: 1]
+* [Prusa YouTube: Paint on Supports](https://www.youtube.com/watch?v=1d_e4aPBy7A)[cite: 1]
+* Machinery's Handbook: Plastics[cite: 1]
+* [Hubs: Snap Fit Joints: Types, Benefits, and Best Practices](https://www.hubs.com/knowledge-base/how-to-design-snap-fits/)[cite: 1]
+* [Formlabs: Snap Fits Guide: Design, Types, and Applications](https://formlabs.com/blog/snap-fit-joints/)[cite: 1]
+* [Designing of Plastic Products for Injection Moulding](https://www.bpf.co.uk/plastipedia/design/Designing_of_Plastic_Products_for_Injection_Moulding.aspx)[cite: 1]
+* UNCC Canvas Lab 5 Assignment Page & Lecture Slides: Snap Fit Assembly and Cantilever Beam Calculations
+* SolidWorks 2024 Documentation: Extrusion, Cut-Extrude, and Parametric Sketching Tools
+* SolidWorks Simulation Suite: Static Structural Analysis & Factor of Safety (FOS) Evaluations
+* Bambu Studio / PrusaSlicer Documentation: FDM Slicing, Layer Height Controls, and Infill Density Configuration
