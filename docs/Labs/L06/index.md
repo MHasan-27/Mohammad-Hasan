@@ -78,6 +78,12 @@ The mating features were recreated in CAD to verify geometric constraints and in
 
 ![Artifact Reference](Artifact%20.jpeg)
 
+![Artifact Side Angle View 2](Artifact%20Side%20Angel%20view%202.png)
+
+![Artifact Side Angle View](Artifact%20Side%20Angel%20view.png)
+
+![Artifact Top Side View](Artifact%20Top%20Side%20View.png)
+
 #### 8. CAD Model Development Stages
 The model was built sequentially from initial base extrusions to clip geometry and edge fillets.
 
