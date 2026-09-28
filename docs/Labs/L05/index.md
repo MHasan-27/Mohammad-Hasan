@@ -209,7 +209,7 @@ In FDM 3D printing, anisotropic layer bonding dictates that parts are weakest ac
 
 ![Slicer Preview](Slice.png)
 
-* **Infill Settings:** Configured with 20% infill density and reinforced perimeters to maximize structural rigidity at the flexure arm base.
+* **Infill Settings:** Configured with 15% infill density and reinforced perimeters to maximize structural rigidity at the flexure arm base.
 
 ![Infill Settings](Infill%20Settings%20.png)
 
