@@ -167,6 +167,12 @@ Below is the embedded video demonstrating the snap fit onto the physical artifac
 
 ## Resources & Download Links
 
+### References & Documentation
+* UNCC Canvas Lab 6 Assignment Page & Lecture Slides
+* PrusaSlicer Documentation: FDM Slicing, Layer Height Controls, and Infill Density Configuration
+* Generative AI (Google Gemini) used to format report structure into GitHub Markdown.
+
+### Downloadable Files
 Below are the downloadable CAD model files, technical drawings, print-ready G-code, and 3MF project files for this assignment:
 
 * [Download CAD Solid Part (.SLDPRT)](Snap%20fit.SLDPRT)
