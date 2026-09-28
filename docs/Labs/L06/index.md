@@ -71,7 +71,7 @@ Digital calipers were used to measure the physical artifact features, establishi
 #### 6. Hand Sketch & CAD Reference
 A hand sketch was drafted to map datum references, critical tolerances, and clip profile dimensions.
 
-![Snap Fit Clip Sketch](Out%20line%20for%20Snap%20fit%20Clips.png)
+
 
 #### 7. Artifact Feature Reconstruction
 The mating features were recreated in CAD to verify geometric constraints and interference boundaries.
@@ -101,37 +101,35 @@ Isometric view of the finalized parametric model.
 2. **Print Size / Bounding Dimensions:** 1.7520 x 2.1130 x 0.2500 in (63.12 x 19.05 x 44.45 mm)
 3. **Layout Reasoning:** The part was placed flat on the print bed to maximize bed adhesion area and promote uniform heat distribution across the base plate.
 4. **Build Orientation:** Used right side of the parts as base to reduce the supports and also have stack up layer on clips. Bending stress has to cross a layer boundary over and over.
-5. **Support Structure Size & Type:** Supports are needed for overhang beam (snap clips). Enabled smart detection for support surface area, and Snug support type.
+   ![Snap Fit Clip Sketch](Out%20line%20for%20Snap%20fit%20Clips.png)
+6. **Support Structure Size & Type:** Supports are needed for overhang beam (snap clips). Enabled smart detection for support surface area, and Snug support type.
 
    ![Supports Setup](Supports.png)
 
-6. **Wall Thickness:** 
+7. **Wall Thickness:** 
    * Vertical: 0.86 mm
    * Horizontal Top: 5 layers (0.7 mm)
    * Horizontal Bottom: 3 layers (0.5 mm)
 
    ![Layer and Perimeter Settings](Layer%20and%20Perimeter%20Settings.png)
 
-7. **Layer Count & Perimeters:** Wall perimeter is 2 layer loops used throughout the print.
-8. **Layer Thickness / Height:** 0.86 mm perimeter width with 0.20 mm layer height.
-9. **Build Volume Occupied:** 63.12 x 19.05 x 44.45 = 8425.05 mm^3 (0.514 in^3).
+8. **Layer Count & Perimeters:** Wall perimeter is 2 layer loops used throughout the print.
+9. **Layer Thickness / Height:** 0.86 mm perimeter width with 0.20 mm layer height.
+10. **Build Volume Occupied:** 63.12 x 19.05 x 44.45 = 8425.05 mm^3 (0.514 in^3).
 
    ![Print Volume Info](Print%20volume%20and%20other%20info.png)
 
-10. **Slicer Settings Rationale:**
+11. **Slicer Settings Rationale:**
     * **Perimeters:** 2 perimeter walls to give a strong outer shell and accurate side-wall dimensions.
     * **Infill Percentage:** 15% standard infill, which gives sufficient structural support without adding unnecessary print time.
     * **Infill Type:** Gyroid infill because it distributes load equally in all directions and prints smoothly.
-11. **Support Removal Tools:** Used needle-nose pliers to remove the supports.
-12. **Fit Adjustments & Failure Analysis:** Two critical points: if the dimension were incorrect or the tolerance isn't accurate, then the part would fail. Also, the deflection for clip is 0.05 in (Fifty Thousandths). If the clip broke because of deflection, then we need to reconsider the clip depth and feature width.
+12. **Support Removal Tools:** Used needle-nose pliers to remove the supports.
+13. **Fit Adjustments & Failure Analysis:** Two critical points: if the dimension were incorrect or the tolerance isn't accurate, then the part would fail. Also, the deflection for clip is 0.05 in (Fifty Thousandths). If the clip broke because of deflection, then we need to reconsider the clip depth and feature width.
 
 ### Print Process Video
 Below is the embedded video recording of the 3D printing process on the Prusa CORE One:
 
-<video controls width="100%">
-  <source src="Printing%20Video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<video src="Printing Video.mp4" controls width="100%"></video>
 
 ---
 
@@ -146,10 +144,7 @@ The printed part was physically mated to the artifact feature to verify the snap
 ### Demonstration Video
 Below is the embedded video demonstrating the snap fit onto the physical artifact:
 
-<video controls width="100%">
-  <source src="Demonstration%20Video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<video src="Demonstration%20Video.mp4" controls width="100%"></video>
 
 ---
 
