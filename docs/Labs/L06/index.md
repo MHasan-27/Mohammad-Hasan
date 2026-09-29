@@ -71,7 +71,7 @@ Digital calipers were used to measure the physical artifact features, establishi
 #### 6. Hand Sketch & CAD Reference
 A hand sketch was drafted to map datum references, critical tolerances, and clip profile dimensions.
 
-
+![Snap Fit Hand Drawing](Lab%206%20Hand%20drawing.jpg)
 
 #### 7. Artifact Feature Reconstruction
 The mating features were recreated in CAD to verify geometric constraints and interference boundaries.
