@@ -1,4 +1,4 @@
-# A7 – [Topic]
+# Lab #7: Linkage Mechanisms
 
 
 # Research
@@ -30,7 +30,137 @@
 > 4. [ResearchGate — Compliant Slider-Crank Mechanism Publications](https://www.researchgate.net/figure/Three-configurations-of-the-compliant-slider-crank-mechanism-setup_fig19_260080351)
 > 5. Journal Publication: [Automatic Synthesis of 1-DOF Transformable Wheel Mechanisms (IEEE T-RO 2024)] (https://ideaocean.ai/technology/publications/)
 > 6. Patent Landscape Analysis: [Slider-Crank Mechanism Force Transmission Design Patent Landscape] (https://www.patsnap.com/resources/blog/rd-blog/slider-crank-mechanism-force-transmission-design-patent-landscape-patent-landscape/) 
-> 
-> 
 
+
+## Design
+
+### Purpose
+* **What it does:** The mechanism converts continuous 360° rotational motion into linear reciprocating (back-and-forth) motion.
+* **Why I chose to design it:** I chose the Piston (Slider-Crank) mechanism because it is a fundamental mechanical linkage used everywhere in modern engineering—from internal combustion engines to pumps. It provides a simple, highly reliable demonstration of mechanical energy conversion with a low part count, making it straightforward to model, print, and debug.
+
+### Components Table
+
+| Component Name | Function | Type |
+| :--- | :--- | :--- |
+| **Base Frame & Cylinder Guide (Base)** | Holds the crank ground pivot pin and provides a linear U-channel bore to guide the sliding piston. | 3D Printed |
+| **Input Crank (Wheel)** | Rotates on the fixed base pin to drive the mechanism. | 3D Printed |
+| **Connecting Rod (Coupler / Linkage)** | Transfers rotational movement from the crank pin to the slider pin. | 3D Printed |
+| **Piston / Slider** | Reciprocates linearly back and forth inside the base guide channel. | 3D Printed |
+
+### Tolerances & Clearances
+
+To ensure smooth motion without binding or excessive wobble, targeted clearances were designed into each interface based on test coupon prints and close running fit guidelines (RC4/RC5) from *Machinery's Handbook*.
+
+| Moving Interface | Nominal Dimensions | Designed Clearance | Purpose / Reason Needed |
+| :--- | :--- | :--- | :--- |
+| **Slider to Base Channel** *(Sliding Fit)* | Channel width vs. Slider body width | **0.015"** (15 thousandths) | Prevents the slider from jamming inside the channel due to wall friction or slight FDM layer swelling. |
+| **Slider Pin to Linkage Hole** *(Revolute Joint)* | Pin OD: 0.200"<br>Hole OD: 0.210" | **0.010"** (10 thousandths) | Allows the coupler link to rotate smoothly around the slider pin without rotational resistance. |
+| **Base Pin to Wheel Hole** *(Main Crank Pivot)* | Pin OD: 0.250"<br>Hole OD: 0.262" | **0.012"** (12 thousandths) | Accounts for internal hole shrinkage on the wheel so it spins freely around the base shaft without seizing. |
+| **Wheel Pin to Linkage Hole** *(Crank Pin Joint)* | Pin OD: 0.125"<br>Hole OD: 0.140" | **0.015"** (15 thousandths) | Provides extra play on the smaller pin to ensure smooth continuous rotation at high speeds without binding. |
+
+### Key Design Decisions
+
+1. **Fully 3D-Printed Pins vs. Metal Fasteners:**
+   * *Alternatives Considered:* Using standard M3 or M4 steel bolts with locknuts.
+   * *Selection & Rationale:* I chose to design and 3D print integrated cylindrical pins directly onto the Base, Wheel, and Slider components. This eliminated the need for external hardware, keeping the assembly fully self-contained and easy to assemble directly off the print bed.
+
+2. **Open U-Channel Guide vs. Fully Enclosed Cylinder:**
+   * *Alternatives Considered:* A fully enclosed tubular cylinder body for the slider.
+   * *Selection & Rationale:* I opted for an open-top rectangular guide track on the base frame. An open channel allows clear visual verification during movement, avoids internal overhang printing issues, and makes it much easier to clear out any small surface imperfections.
+
+3. **Step Offset on Linkage Arm:**
+   * *Alternatives Considered:* A flat, single-plane connecting rod.
+   * *Selection & Rationale:* I added a small vertical clearance offset at the connecting rod ends. This elevates the linkage body slightly off the base floor and wheel face, preventing surface friction and link collisions during full 360° rotation.
+
+### CAD Model Images
+
+* **Base Frame:**
+  * ![Base 2](Base%202.png)
+  * *Figure 1:* Base plate CAD layout showing the main pivot pin and guide rails.
+  * ![Base 3](Base%203.png)
+  * *Figure 2:* Completed Base model with optimized wall thickness and mounting features.
+* **Input Crank / Wheel:**
+  * ![Wheel 1](Wheel%201.png)
+  * *Figure 3:* Initial sketch and drive pin placement on the Wheel model.
+  * ![Wheel 2](Wheel%202.png)
+  * *Figure 4:* Final CAD view of the Wheel with central shaft bore.
+* **Connecting Rod / Linkage:**
+  * ![Linkage 1](Linkage%201.png)
+  * *Figure 5:* CAD model of the Linkage arm showing pin-hole spacing and revolute joint eyes.
+* **Piston / Slider:**
+  * ![Slider 1](Slider%201.png)
+  * *Figure 6:* CAD design of the Slider body and guide contact faces.
+  * ![Slider 2](Slider%202.png)
+  * *Figure 7:* Detail view of the Slider top pin interface.
+* **Final Assembly:**
+  * ![Assemble](Assemble%20.png)
+  * *Figure 8:* Complete CAD assembly (`Assem crank-slider.SLDASM`) showing all mated components.
+
+---
+
+## 3D Print
+
+### Slicing & Printing Details
+* **Slicer Setup:** The complete assembly was sliced together (`The Piston (crank-slider)..3mf` / `.bgcode`) using PLA filament with a 0.4 mm nozzle and 0.20 mm layer height.
+* **Key Slicer Settings:** Applied a horizontal expansion offset ([Elephant's foot compensation](https://help.prusa3d.com/article/elephant-foot-compensation_114487)) to prevent bottom-layer mushrooming from tightening the slider track. Seams were placed away from sliding faces using [Seam position tuning](https://help.prusa3d.com/article/seam-position_151069).
+
+### Slicer & Printed Part Measurements Table
+
+| Component / Interface | Slicer / CAD Dimension | Printed Measured Dimension | Deviation / Notes |
+| :--- | :--- | :--- | :--- |
+| **Base Channel Width** | *[Insert dimension]* | *[Insert measured val]* | *[Insert notes]* |
+| **Slider Body Width** | *[Insert dimension]* | *[Insert measured val]* | *[Insert notes]* |
+| **Base Pin OD** | 0.250" | *[Insert measured val]* | *[Insert notes]* |
+| **Wheel Hole ID** | 0.262" | *[Insert measured val]* | *[Insert notes]* |
+
+### Slicing & Physical Assembly Images
+* **Slicer View:**
+  * ![Slice](Slice%20.png)
+  * *Figure 9:* Preview of the toolpath layout and print bed arrangement in the slicer.
+* **Physical Assembly & Video:**
+  * *[Insert Physical Assembly Photo Here]*
+  * *Figure 10:* Photo of the fully assembled 3D-printed piston mechanism.
+  * *[Insert Demonstration / Assembly Video Here]*
+
+---
+
+## Lessons Learned
+
+1. **Time Breakdown:**
+   * **Research:** 2.5 hours
+   * **CAD Modeling:** 4.5 hours (4–5 hours)
+   * **Slicing & Print Prep:** 0.5 hours
+   * **3D Printing:** 1.0 hour
+   * **Post-Processing & Assembly:** 1.5 hours
+   * **Total Time:** **10.0 hours**
+   * *Comparison:* The total time took longer than my initial expectations primarily due to the extensive CAD modeling iterations required to ensure pin-and-hole clearances were dialed in properly before sending files to the slicer.
+
+2. **Biggest Mistake:**
+   * *Failure & Cause:* My initial slider bound up slightly inside the base guide channel due to small surface layer-start "zits" along the inner track wall.
+   * *Discovery & Fix:* I identified the issue by manually moving the slider and feeling where it caught on the wall. I fixed it by lightly sanding the inner track walls with fine sandpaper and aligning the slicer seam locations away from the contact surfaces.
+
+3. **Tolerances:**
+   * *Performance:* The designed 0.010" – 0.015" clearances worked well overall straight off the print bed without requiring major reprints.
+   * *Future Adjustments:* If I re-printed this mechanism, I would increase the Wheel-to-Base pin clearance from 0.012" to 0.016" to give the main rotating shaft a slightly looser, lower-friction spin without needing any post-sanding.
+
+---
+
+## Downloads & Resources
+
+### Part & Assembly Files
+* 📄 [Base Part (`Base.SLDPRT`)](Base.SLDPRT)
+* 📄 [Wheel Part (`Wheel.SLDPRT`)](Wheel.SLDPRT)
+* 📄 [Linkage Part (`Linkage.SLDPRT`)](Linkage.SLDPRT)
+* 📄 [Slider Part (`Slide.SLDPRT`)](Slide.SLDPRT)
+* 🧩 [Full CAD Assembly (`Assem crank-slider.SLDASM`)](Assem%20crank-slider.SLDASM)
+
+### Print & G-Code Files
+* 📦 [3MF Project File (`The Piston (crank-slider)..3mf`)](The%20Piston%20(crank-slider)..3mf)
+* 🖨️ [G-Code File (`The Piston (crank-slider)._0.4n_0.2mm_PLA_COREONE_21m.bgcode`)](The%20Piston%20(crank-slider).%20_0.4n_0.2mm_PLA_COREONE_21m.bgcode)
+
+### External Resources & References
+* 🎥 [12 Crank Mechanisms Visualized Beautifully (YouTube)](https://www.youtube.com/watch?v=N2TcOHkQaJw) — Mechanism reference and animation motion profiles.
+* 📖 [Prusa Knowledge Base — Elephant Foot Compensation](https://help.prusa3d.com/article/elephant-foot-compensation_114487) — Slicer dimensional calibration guidelines.
+* 📖 [Prusa Knowledge Base — Seam Position Settings](https://help.prusa3d.com/article/seam-position_151069) — Layer seam optimization for revolute pin and sliding fit joints.
+* 📘 *Machinery's Handbook (31st Edition)* — Standard fit tables (RC4/RC5 close running fits).
 
