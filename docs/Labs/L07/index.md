@@ -113,11 +113,15 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 
 | Component / Interface | Slicer / CAD Dimension | Printed Measured Dimension | Deviation / Notes |
 | :--- | :--- | :--- | :--- |
-| **Base Channel Width** | *[Insert dimension]* | *[Insert measured val]* | *[Insert notes]* |
-| **Slider Body Width** | *[Insert dimension]* | *[Insert measured val]* | *[Insert notes]* |
-| **Base Pin OD** | 0.250" | *[Insert measured val]* | *[Insert notes]* |
-| **Wheel Hole ID** | 0.262" | *[Insert measured val]* | *[Insert notes]* |
-
+| **Base Channel Height** | 0.1270" | **0.1120"** | -0.0150" deviation; slight first-layer squish reduced effective channel height, but retained sufficient clearance. |
+| **Slider Body Height** | 0.1160" | **0.1010"** | -0.0150" deviation; matches channel height reduction proportionally, ensuring a smooth sliding clearance fit (~0.0110"). |
+| **Slider Pin OD (Linkage Joint)** | 0.2000" | **0.1965"** | -0.0035" deviation; minor FDM perimeter shrinkage on pin outer diameter. |
+| **Base Pin OD (Main Axis)** | 0.2500" | **0.2400"** | -0.0100" deviation; thermal contraction reduced shaft diameter slightly. |
+| **Wheel Hole ID (Main Axis)** | 0.2620" | **0.2540"** | -0.0080" deviation; internal hole shrinkage, yielding a smooth 0.0140" running clearance over the 0.2400" base pin. |
+| **Wheel Pin OD (Drive Pin)** | 0.1250" | **0.1265"** | +0.0015" deviation; slight material bulge near pin root. |
+| **Linkage Hole ID (Wheel Joint)** | 0.1400" | **0.1165"** | -0.0235" deviation; significant FDM internal hole wall expansion, requiring light reaming for free rotation over the 0.1265" wheel pin. |
+| **Linkage Hole ID (Slider Joint)** | 0.2100" | **0.1965"** | -0.0135" deviation; internal hole shrinkage created an exact zero-clearance press/snug fit with the 0.1965" slider pin. |
+-
 ### Slicing & Physical Assembly Images
 * **Slicer View:**
   * ![Slice](Slice%20.png)
