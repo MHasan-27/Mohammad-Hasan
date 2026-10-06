@@ -126,10 +126,57 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 * **Slicer View:**
   * ![Slice](Slice%20.png)
   * *Figure 9:* Preview of the toolpath layout and print bed arrangement in the slicer.
-* **Physical Assembly & Video:**
-  * *[Insert Physical Assembly Photo Here]*
-  * *Figure 10:* Photo of the fully assembled 3D-printed piston mechanism.
-  * *[Insert Demonstration / Assembly Video Here]*
+## 3D Printed Assembly Images
+
+- **Print Bed View:**
+  ![Print Complete](Print%20Complete.jpg)
+  *Figure 9: Fully printed assembly on the print bed.*
+
+- **Printing Process:**
+  ![Printing Picture](Printing%20Picture.jpg)
+  *Figure 10: In-progress printing of mechanism components.*
+
+---
+
+## Final Physical Assembly & Media
+
+### Demonstration Videos
+- **Assembly Demonstration:**
+  <video width="100%" controls preload="metadata">
+    <source src="Demonstration.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+- **Low-Res Assembly Video:**
+  <video width="100%" controls preload="metadata">
+    <source src="Assemble%20Low%20Resu.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+- **In-Progress Printing Video:**
+  <video width="100%" controls preload="metadata">
+    <source src="Printing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+### Assembly Motion GIF
+![Assembly GIF](Assem%20GIF.gif)
+
+### Physical Assembly Views
+- **Isometric View:**
+  ![Assemble Isometric View](Assemble%20Isometric%20View.jpg)
+
+- **Front View:**
+  ![Assemble Front View](Assemble%20Front%20View.jpg)
+
+- **Top View:**
+  ![Assemb Top View](Assemb%20Top%20View.jpg)
+
+- **Bottom View:**
+  ![Assemb Bottom View](Assemb%20Bottom%20View.jpg)
+
+- **Slide Channel Detail:**
+  ![Assemble Slide channel](Assemble%20Slide%20channel.jpg)
 
 ---
 
