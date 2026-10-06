@@ -101,7 +101,6 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
   Your browser does not support the video tag.
 </video>
 
-![Assembly GIF](Assem%20GIF.gif)
 ---
 
 ## 3D Print
