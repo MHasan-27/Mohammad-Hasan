@@ -109,6 +109,20 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 * **Slicer Setup:** The complete assembly was sliced together (`The Piston (crank-slider)..3mf` / `.bgcode`) using PLA filament with a 0.4 mm nozzle and 0.20 mm layer height.
 * **Key Slicer Settings:** Applied a horizontal expansion offset ([Elephant's foot compensation](https://help.prusa3d.com/article/elephant-foot-compensation_114487)) to prevent bottom-layer mushrooming from tightening the slider track. Seams were placed away from sliding faces using [Seam position tuning](https://help.prusa3d.com/article/seam-position_151069).
 
+### Slicer Configuration Images
+
+- **Elephant Foot Compensation on Slice:**
+  ![Elephant Foot Compensation on Slice](Elephant%20Foot%20Compensation%20on%20Slice.png)
+  *Figure 11: Toolpath preview displaying elephant foot compensation on sliced layers.*
+
+- **Elephant Foot Compensation Settings:**
+  ![Elephant Foot Compensation](Elephant%20Foot%20Compensation.png)
+  *Figure 12: Slicer parameters for initial layer elephant foot compensation.*
+
+- **Seam Position Settings:**
+  ![Seam Position](Seam%20Position%20.png)
+  *Figure 13: Z-seam alignment settings configured to prevent binding along sliding surfaces.*
+
 ### Slicer & Printed Part Measurements Table
 
 | Component / Interface | Slicer / CAD Dimension | Printed Measured Dimension | Deviation / Notes |
