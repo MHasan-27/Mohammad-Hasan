@@ -91,7 +91,12 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 * **Final CAD Assembly:**
   ![Assemble](Assemble%20.png)
   *Figure 8: Complete CAD assembly showing all mated components.*
-
+  
+- **CAD Assembly Video:**
+  <video width="100%" controls preload="metadata">
+    <source src="Assemble%20Low%20Resu.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 ---
 
 ## 3D Print
@@ -136,7 +141,12 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 - **Printing Process:**
   ![Printing Picture](Printing%20Picture.jpg)
   *Figure 13: In-progress printing of mechanism components.*
-
+  
+- **In-Progress Printing Video:**
+  <video width="100%" controls preload="metadata">
+    <source src="Printing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 ---
 
 ## Demonstrations & Physical Assembly
@@ -149,20 +159,6 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
     Your browser does not support the video tag.
   </video>
 
-- **Low-Res Assembly Video:**
-  <video width="100%" controls preload="metadata">
-    <source src="Assemble%20Low%20Resu.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-- **In-Progress Printing Video:**
-  <video width="100%" controls preload="metadata">
-    <source src="Printing.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-### Motion GIF
-![Assembly GIF](Assem%20GIF.gif)
 
 ### Physical Assembly Views
 - **Isometric View:**
