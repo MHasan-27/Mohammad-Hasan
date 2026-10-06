@@ -1,10 +1,3 @@
-Here is the complete, properly formatted `index.md` file contents.
-
-The primary fix applied was **adding a blank line above every Markdown table** and ensuring proper pipe alignment (`| :--- | :--- |`) so that your static site generator (MkDocs / GitHub Pages) renders all tables cleanly instead of showing plain text.
-
----
-
-```markdown
 # Lab #7: Linkage Mechanisms
 
 ## Research
@@ -228,5 +221,3 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 * 📖 [Prusa Knowledge Base — Elephant Foot Compensation](https://help.prusa3d.com/article/elephant-foot-compensation_114487) — Slicer dimensional calibration guidelines.
 * 📖 [Prusa Knowledge Base — Seam Position Settings](https://help.prusa3d.com/article/seam-position_151069) — Layer seam optimization for revolute pin and sliding fit joints.
 * 📘 *Machinery's Handbook (31st Edition)* — Standard fit tables (RC4/RC5 close running fits).
-
-```
