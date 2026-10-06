@@ -95,8 +95,13 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 * **Final Assembly:**
   * ![Assemble](Assemble%20.png)
   * *Figure 8:* Complete CAD assembly (`Assem crank-slider.SLDASM`) showing all mated components.
-* 🎬 [Assembly Video (`Assemble Low Resu.mp4`)](Assemble%20Low%20Resu.mp4)
-* 🎞️ [Assembly GIF (`Assem GIF.gif`)](Assem%20GIF.gif)
+
+<video width="100%" controls preload="metadata">
+  <source src="Assemble%20Low%20Resu.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+![Assembly GIF](Assem%20GIF.gif)
 ---
 
 ## 3D Print
