@@ -135,7 +135,12 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
 - **Printing Process:**
   ![Printing Picture](Printing%20Picture.jpg)
   *Figure 10: In-progress printing of mechanism components.*
-
+  
+- **In-Progress Printing Video:**
+  <video width="100%" controls preload="metadata">
+    <source src="Printing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 ---
 
 ## Final Physical Assembly & Media
@@ -147,17 +152,7 @@ To ensure smooth motion without binding or excessive wobble, targeted clearances
     Your browser does not support the video tag.
   </video>
 
-- **Low-Res Assembly Video:**
-  <video width="100%" controls preload="metadata">
-    <source src="Assemble%20Low%20Resu.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-- **In-Progress Printing Video:**
-  <video width="100%" controls preload="metadata">
-    <source src="Printing.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
 ### Assembly Motion GIF
 ![Assembly GIF](Assem%20GIF.gif)
