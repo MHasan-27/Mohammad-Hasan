@@ -25,7 +25,7 @@ Asking smart questions matters because it stops us from rushing blindly into a s
 The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDPRT`), following a structured parametric design workflow:
 
 * **Step 1: Base Profile Sketch**  
-  Started with a side-profile sketch establishing the 65° incline angle, 180.00 mm base length, 100.00 mm height, and an initial fillet radius of R11.00 mm for the front laptop stop.
+  Started with a side-profile sketch establishing the 65° incline angle, 150.00 mm base length, 100.00 mm height, and an initial fillet radius of R11.00 mm for the front laptop stop.
   ![Design Step 1](Design%20Step%201.png)
 
 * **Step 2: Extrusion & Width Definition**  
