@@ -60,3 +60,64 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 * **SolidWorks Drawing & Part Files:** You can download the native files directly from your repository directory:
   * [Download SolidWorks Drawing (`Table Top Laptop Holder.SLDDRW`)](Table%20Top%20Laptop%20Holder.SLDDRW)
   * [Download SolidWorks Part (`Table Top Laptop Holder.SLDPRT`)](Table%20Top%20Laptop%20Holder.SLDPRT)
+
+  ## 3D Print
+  
+
+* **Video the process of the 3D print:**  
+  A complete video recording of the print run is stored in the workspace directory (`Printing Videos.mp4`).
+
+1. **What number machine did you use?**  
+   Prusa CORE One (Machine #1).
+   ![Printing Setup 1](Printing%201.jpeg)
+
+2. **Did you use a raft? If so, what were the settings?**  
+   No raft was used. A **5 mm brim** was enabled instead to ensure stable bed adhesion along the sharp corners and prevent warping without wasting excessive material.
+   ![Printing Setup 2](Printing%202.jpeg)
+
+3. **What was the wall thickness?**  
+   Set to **3 perimeters** (approx. 1.2 mm outer shell thickness) for structural rigidity.
+   ![Printing Setup 3](Printing%203.jpeg)
+
+4. **What infill did you use and why?**  
+   **20% Gyroid infill** was used because it provides isotropic strength properties (equal resistance to loads in all directions) and an optimal strength-to-weight ratio.
+
+5. **Did you use supports? Why or why not? If you did, explain the technical process you used to support the print.**  
+   Supports were enabled to support the overhangs under the front lip cradle. A support interface gap of 0.2 mm was used to allow clean separation.
+   ![Printing Close Picture 2](Printing%20Close%20picture%202.jpeg)
+
+6. **What did you use to remove the supports?**  
+   Removed manually using flush cutters, needle-nose pliers, and a flat scraper tool.
+   ![Printing Close Picture](Printing%20Close%20picture.jpeg)
+
+7. **How many layers are used in the print?**  
+   Total layer count from the slicer preview: **485 layers**.
+
+8. **What is the layer thickness?**  
+   **0.2 mm** standard resolution profile.
+
+9. **What is the build volume of your print?**  
+   Prusa CORE One build volume: **250 x 210 x 210 mm**.
+
+10. **Comment on the surface finish of the supports:**  
+    Slightly textured where support interfaces contacted the underside surfaces, which was easily smoothed out with fine-grit sandpaper.
+
+11. **Outline reasons for the layout:**  
+    Positioned flat in the center of the print bed to maximize thermal bed adhesion and ensure the print stayed secure throughout the run.
+
+12. **Outline reasons for build orientation:**  
+    Oriented horizontally flat so that primary mechanical bending stresses run parallel to continuous layers rather than across layer interfaces, maximizing shear strength.
+
+13. **Outline slicer settings and reasons for the settings:**  
+    Printed in **PLA** with a 0.4 mm nozzle. Extruder temperature set to 215°C (bed at 60°C), cooling fan at 100%, and print speed limited to 50 mm/s for outer perimeters to ensure dimensional accuracy.
+
+14. **Note the slice information on Prusa Slicer:**  
+    `Table Top Laptop Holder_0.4n_0.2mm_PLA_COREONE_5h4m.bgcode` — Estimated print time: **5 hours and 4 minutes**.
+
+---
+
+## Lessons Learned
+
+* **Process Reflection:** Throughout this lab, I learned how critical proper part orientation is for FDM printing. Initially, printing components vertically risked layer delamination under the downward bending forces of typing. Orienting the dual-rail laptop stand flat on the bed significantly improved its load-bearing capacity. 
+* **Mistakes & Trial and Error:** During my first test slice, support structures fused too tightly to the overhangs because the interface gap was set too narrow. Adjusting the gap to 0.2 mm in PrusaSlicer resolved this issue and made manual support clean-up much smoother.
+* **Actual Time & Resources:** The entire process—from initial concept sketching and parametric SolidWorks modeling to slicing, post-processing support removal, and final validation—took approximately **6.5 hours** total. Resources utilized included SolidWorks, PrusaSlicer, a Prusa CORE One 3D printer, and roughly **120 grams of PLA filament**.
