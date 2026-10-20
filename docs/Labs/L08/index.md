@@ -53,6 +53,12 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 * **FDM Shrinkage & Tolerances:** Designed with a nominal structural wall thickness of **10.00 mm** to ensure rigid resistance against downward bending loads.
 * **Surface Clearances:** Maintained strict geometric constraints in the front lip slot (radius R11.00 mm) to ensure standard laptop edge thicknesses (ranging from 15mm to 20mm) fit snugly without requiring post-processing sanding or risking loose movement.
 
+### 5. Design Limitations & Proposed Improvements
+* **Sizing & Compatibility Constraints:** Due to physical build volume limitations of the 3D printer and the single-part design, the current stand cannot accommodate larger 15-inch laptops and is currently limited to smaller devices such as the MacBook Air and iPad.
+* **Friction & Stability Additions:** 
+  * **Base Anti-Slip Pads:** The bottom base requires the addition of stick-on rubber pads to create necessary friction against smooth desk surfaces and ensure overall stability during typing.
+  * **Arm Grip Pads:** Rubber contact pads can also be placed on the upper surface of the holder arms to increase friction, which would help securely grip larger devices and prevent slipping.
+
 ### Final Design Dimensions & Engineering Drawing
 
 ![Table Top Laptop Holder Drawing](Table%20Top%20Laptop%20Holder.JPG)
