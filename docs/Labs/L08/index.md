@@ -25,24 +25,24 @@ Asking smart questions matters because it stops us from rushing blindly into a s
 The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDPRT`), following a structured parametric design workflow:
 
 * **Step 1: Base Profile Sketch**  
-  Started with a side-profile sketch establishing the 65° incline angle, 180.00 mm base length, 100.00 mm height, and an initial fillet radius of R11.00 mm for the front laptop stop[cite: 3].
-  ![Design Step 1](Design Step 1.jpg)
+  Started with a side-profile sketch establishing the 65° incline angle, 180.00 mm base length, 100.00 mm height, and an initial fillet radius of R11.00 mm for the front laptop stop.
+  ![Design Step 1](Design%20Step%201.jpg)
 
 * **Step 2: Extrusion & Width Definition**  
-  Extruded the side profile sketch using a blind extrusion set to 160.00 mm width to create the primary structural arm and connect the support base[cite: 4].
-  ![Design Step 2](Design Step 2.jpg)
+  Extruded the side profile sketch using a blind extrusion set to 160.00 mm width to create the primary structural arm and connect the support base.
+  ![Design Step 2](Design%20Step%202.jpg)
 
 * **Step 3: Reference Plane Creation**  
-  Created an offset reference plane (`Plane1`) positioned at an exact distance of 80.00 mm from the outer face to prepare for mirroring the structural arm[cite: 5].
-  ![Design Step 3](Design Step 3.jpg)
+  Created an offset reference plane (`Plane1`) positioned at an exact distance of 80.00 mm from the outer face to prepare for mirroring the structural arm.
+  ![Design Step 3](Design%20Step%203.jpg)
 
 * **Step 4: Mirror Operation**  
-  Used the Mirror feature across `Plane1` to replicate the left-side support arm and base structure symmetrically, ensuring a balanced dual-rail cradle configuration[cite: 1].
-  ![Design Step 4](Design Step 4.jpg)
+  Used the Mirror feature across `Plane1` to replicate the left-side support arm and base structure symmetrically, ensuring a balanced dual-rail cradle configuration.
+  ![Design Step 4](Design%20Step%204.jpg)
 
 * **Step 5: Final Assembly & Fillets**  
-  Completed the model by adding structural fillets (e.g., `Fillet15`) to eliminate sharp stress concentration corners and ensure smooth transitions[cite: 2].
-  ![Design Step 5](Design Step 5.jpg)
+  Completed the model by adding structural fillets (e.g., `Fillet15`) to eliminate sharp stress concentration corners and ensure smooth transitions.
+  ![Design Step 5](Design%20Step%205.jpg)
 
 ### 3. Decision Making Along the Way
 * **Angle Optimization:** Selected a **65° incline angle** because it provides an ideal ergonomic viewing height for standard desk use while keeping the laptop securely cradled against gravity without slipping.
@@ -54,8 +54,10 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 * **Surface Clearances:** Maintained strict geometric constraints in the front lip slot (radius R11.00 mm) to ensure standard laptop edge thicknesses (ranging from 15mm to 20mm) fit snugly without requiring post-processing sanding or risking loose movement.
 
 ### Final Design Dimensions & Engineering Drawing
-The complete technical drawing specifies all critical manufacturing dimensions, including the overall width (172.22 mm outer / 152.37 mm inner span), 97.15 mm vertical clearance, and 30.00 mm component spacing[cite: 6].
+The complete technical drawing specifies all critical manufacturing dimensions, including the overall width (172.22 mm outer / 152.37 mm inner span), 97.15 mm vertical clearance, and 30.00 mm component spacing.
 
-![Table Top Laptop Holder Drawing](Table Top Laptop Holder.jpg)
+![Table Top Laptop Holder Drawing](Table%20Top%20Laptop%20Holder.jpg)
 
-* **SolidWorks Drawing File:** You can download or view the complete engineering drawing and part files here: [Table Top Laptop Holder Drawing (`Table Top Laptop Holder.SLDDRW`)](Table%20Top%20Laptop%20Holder.SLDDRW)[cite: 6].
+* **SolidWorks Drawing & Part Files:** You can download the native files directly from the repository directory:
+  * [Download SolidWorks Drawing (`Table Top Laptop Holder.SLDDRW`)](Table%20Top%20Laptop%20Holder.SLDDRW)
+  * [Download SolidWorks Part (`Table Top Laptop Holder.SLDPRT`)](Table%20Top%20Laptop%20Holder.SLDPRT)
