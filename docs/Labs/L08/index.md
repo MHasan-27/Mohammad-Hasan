@@ -54,7 +54,6 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 * **Surface Clearances:** Maintained strict geometric constraints in the front lip slot (radius R11.00 mm) to ensure standard laptop edge thicknesses (ranging from 15mm to 20mm) fit snugly without requiring post-processing sanding or risking loose movement.
 
 ### Final Design Dimensions & Engineering Drawing
-The complete technical drawing specifies all critical manufacturing dimensions, including the overall width (172.22 mm outer / 152.37 mm inner span), 97.15 mm vertical clearance, and 30.00 mm component spacing.
 
 ![Table Top Laptop Holder Drawing](Table%20Top%20Laptop%20Holder.JPG)
 
