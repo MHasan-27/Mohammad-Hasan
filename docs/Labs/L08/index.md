@@ -16,7 +16,7 @@ Asking smart questions matters because it stops us from rushing blindly into a s
 4. **Approach to Design:**  
    The design approach focuses on a minimalist, angle-optimized profile modeled in CAD. It uses a stable base design that can be sliced efficiently in PrusaSlicer and 3D printed quickly out of standard rigid filament without needing complex assembly or permanent hardware.
 
-## Design (40%)
+## Design 
 
 ### 1. Initial Concept & Sketching
 * The initial concept for the tabletop laptop holder started with hand-drawn concept sketches outlining an inclined, low-profile cradle that elevates the computer screen while maximizing airflow underneath the chassis. These sketches were exported to a PDF and included in the portfolio workspace.
