@@ -145,12 +145,12 @@ Here is the physical demonstration of the 3D printed tabletop laptop holder in u
 
 * **iPad Setup Demonstration:**  
   The stand securely holds and elevates smaller devices like an iPad at an optimal ergonomic viewing angle.
-  ![Demonstration with iPad](docs/Labs/L08/Demonstration%20with%20ipad.jpeg)
+  ![Demonstration with iPad](Demonstration%20with%20ipad.jpeg)
 
 * **Printed Parts Overview (View 1):**  
   Overview of the finished structural dual-rail components right after print completion.
-  ![Printed Parts 1](docs/Labs/L08/Printed%20parts.jpeg)
+  ![Printed Parts 1](Printed%20parts.jpeg)
 
 * **Printed Parts Overview (View 2):**  
   Alternate angle showing the clean surface finish, geometric profile, and overall quality of the final printed parts.
-  ![Printed Parts 2](docs/Labs/L08/Printed%20parts%202.jpeg)
+  ![Printed Parts 2](Printed%20parts%202.jpeg)
