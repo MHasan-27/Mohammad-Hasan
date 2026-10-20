@@ -65,7 +65,12 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
   
 
 * **Video the process of the 3D print:**  
-  A complete video recording of the print run is stored in the workspace directory (`Printing Videos.mp4`).
+    A video recording of the print run is embedded below:
+  
+  <video controls width="100%">
+    <source src="Printing%20Videos.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 1. **What number machine did you use?**  
    Prusa CORE One (Machine #15).
@@ -75,7 +80,7 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 2. **Did you use a raft? If so, what were the settings?**  
    No raft was used. A **5 mm brim** was enabled instead, along with an **Elephant foot compensation of 0.25 mm** to ensure stable bed adhesion along the sharp corners, prevent warping, and maintain precise first-layer dimensions without wasting excessive material.
    ![Elephant foot Compensation](Elephant%20foot%20Compensation.png)
-   ![Printing Setup 2](Printing%202.jpeg)
+  
 
 3. **What was the wall thickness?**  
    Set to **3 perimeters** (minimum vertical shell thickness) for structural rigidity and load support.
@@ -87,20 +92,20 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 
 5. **Did you use supports? Why or why not? If you did, explain the technical process you used to support the print.**  
    Supports were enabled to support the overhangs under the front lip cradle. A support interface gap of 0.2 mm was used to allow clean separation.
-   ![Printing Close Picture 2](Printing%20Close%20picture%202.jpeg)
+   ![Automatic Support](Automatic%20Support%20.jpg)
 
 6. **What did you use to remove the supports?**  
    Removed manually using flush cutters, needle-nose pliers, and a flat scraper tool.
-   ![Printing Close Picture](Printing%20Close%20picture.jpeg)
+  
 
 7. **How many layers are used in the print?**  
-   Total layer count from the slicer preview: **485 layers**.
+   Total layer count from the slicer preview: **1300 layers**.
 
 8. **What is the layer thickness?**  
    **0.2 mm** standard resolution profile.
 
 9. **What is the build volume of your print?**  
-   Prusa CORE One build volume: **250 x 210 x 210 mm**.
+   Prusa CORE One build volume: **160 x 97.14 x 180 mm^3**.
 
 10. **Comment on the surface finish of the supports:**  
     Slightly textured where support interfaces contacted the underside surfaces, which was easily smoothed out with fine-grit sandpaper.
