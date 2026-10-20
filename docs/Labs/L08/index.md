@@ -92,7 +92,7 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 
 5. **Did you use supports? Why or why not? If you did, explain the technical process you used to support the print.**  
    Supports were enabled to support the overhangs under the front lip cradle. A support interface gap of 0.2 mm was used to allow clean separation.
-   ![Automatic Support](Automatic%20Support%20.jpg)
+ ![Automatic Support](Automatic%20Support%20.png)
 
 6. **What did you use to remove the supports?**  
    Removed manually using flush cutters, needle-nose pliers, and a flat scraper tool.
