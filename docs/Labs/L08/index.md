@@ -58,6 +58,6 @@ The complete technical drawing specifies all critical manufacturing dimensions, 
 
 ![Table Top Laptop Holder Drawing](Table%20Top%20Laptop%20Holder.jpg)
 
-* **SolidWorks Drawing & Part Files:** You can download the native files directly from the repository directory:
-  * [Download SolidWorks Drawing (`Table Top Laptop Holder.SLDDRW`)](Table%20Top%20Laptop%20Holder.SLDDRW)
+* **SolidWorks Drawing & Part Files:** You can download the native files directly from your repository directory:
+  * [Download SolidWorks Drawing (`Table Top Laptop Holder.SLDDRW`)](Table%20Top%20Laptop%20Holder.SLDDRW)[cite: 6]
   * [Download SolidWorks Part (`Table Top Laptop Holder.SLDPRT`)](Table%20Top%20Laptop%20Holder.SLDPRT)
