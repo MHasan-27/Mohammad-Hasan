@@ -136,3 +136,21 @@ The 3D model was built step-by-step in SolidWorks (`Table Top Laptop Holder.SLDP
 * **Process Reflection:** Throughout this lab, I learned how critical proper part orientation is for FDM printing. Initially, printing components vertically risked layer delamination under the downward bending forces of typing. Orienting the dual-rail laptop stand flat on the bed significantly improved its load-bearing capacity. 
 * **Mistakes & Trial and Error:** During my first test slice, support structures fused too tightly to the overhangs because the interface gap was set too narrow. Adjusting the gap to 0.2 mm in PrusaSlicer resolved this issue and made manual support clean-up much smoother.
 * **Actual Time & Resources:** The entire process—from initial concept sketching and parametric SolidWorks modeling to slicing, post-processing support removal, and final validation—took approximately **6.5 hours** total. Resources utilized included SolidWorks, PrusaSlicer, a Prusa CORE One 3D printer, and roughly **120 grams of PLA filament**.
+
+  ---
+
+## Demonstration
+
+Here is the physical demonstration of the 3D printed tabletop laptop holder in use, showcasing its compatibility with devices like the iPad and the final printed parts setup:
+
+* **iPad Setup Demonstration:**  
+  The stand securely holds and elevates smaller devices like an iPad at an optimal ergonomic viewing angle.
+  ![Demonstration with iPad](docs/Labs/L08/Demonstration%20with%20ipad.jpeg)
+
+* **Printed Parts Overview (View 1):**  
+  Overview of the finished structural dual-rail components right after print completion.
+  ![Printed Parts 1](docs/Labs/L08/Printed%20parts.jpeg)
+
+* **Printed Parts Overview (View 2):**  
+  Alternate angle showing the clean surface finish, geometric profile, and overall quality of the final printed parts.
+  ![Printed Parts 2](docs/Labs/L08/Printed%20parts%202.jpeg)
