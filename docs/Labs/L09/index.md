@@ -25,6 +25,10 @@
 
 ### Parametric Proof & Engineered Allowances
 * **Parametric Equations & Proof:** All part files are tied to SolidWorks global variables (Sigma). Modifying the material thickness or clearance variable in the equations table instantly updates both extrusion depth (0.106 in) and slot gap width (0.096 in) across all components simultaneously, proving robust parametric control.
+  
+ ![With Change Parameter](With%20Change%20Parameter.png)
+![Measurement Change Once Parameter Change](Measurment%20change%20once%20paramiter%20change.png)
+  
 * **Engineered Allowances Traced to Measured Data:**
   * **Measured Thickness:** Caliper measurements across multiple points on the sheet yielded a mean thickness of T = 0.106 in (avoiding nominal 1/8" assumptions).
   * **Kerf Measurement Calculations:** Average Kerf roughly equals 0.007 in. Final Kerf allowance for 10k Tolerance was set to 0.009 to 0.010 in.
@@ -71,6 +75,9 @@ Laser cutting is a non-contact thermal manufacturing process where high-density 
 
 ### Test Coupons, Nesting, Video & Edge Quality
 * **Test Coupons & Fit Evaluation:** Initial cuts expanded internal slot openings up to 0.1170 in, creating loose, wobbly joints. Reducing CAD slot width to 0.096 in (Sigma 0.096) secured a snug press-fit.
+* **Test parts**
+   ![Test Design](Test%20Design.jpeg)
+  
 * **Layout & Nesting:** Parts were nested tightly inside the 12 in x 12 in Inkscape sheet with shared vector lines to reduce laser head travel path and prevent thermal warping.
 * **Video Capture:** A continuous video clip recording the Epilog vector cut execution was captured.
 * **Edge Quality & Cleanup:** Air assist suppressed flare-ups. Decreasing speed from 20% to 15% produced clean, fully penetrated cuts. Minor soot along cut edges was cleaned using fine-grit sandpaper and wiped with isopropyl alcohol.
@@ -96,13 +103,14 @@ Laser cutting is a non-contact thermal manufacturing process where high-density 
 ## Lessons Learned
 
 ### Process Log & Total Time
-| Date and time | Time spent | What happened | Decision or change made |
-| :--- | :--- | :--- | :--- |
-| Oct 22, 2026 | 4 hrs | Evaluated test fit failures due to laser kerf expansion. | Applied 0.010 in tighter clearance offset; updated CAD slot width to 0.096 in. |
-| Oct 27, 2026 | 4 hrs | Initial writing of the assignment. | Waiting for final cut. |
-| Oct 28, 2026 | 2.0 hrs | Exported DXF to Inkscape (12x12 in sheet), set vector cuts, decreased speed from 20% to 15% to achieve complete cut-through, and assembled kit. | Verified firm press-fits; compiled portfolio documentation and log. |
 
-**Total Time Spent:** 10 hours from start to finish.
+| Date and time | Time spent | Step | What happened | Decision or change made |
+| :--- | :--- | :--- | :--- | :--- |
+| Oct 22, 2026 | 4.0 hrs | Steps 1-4 | Evaluated test fit failures due to laser kerf expansion. | Applied 0.010 in tighter clearance offset; updated CAD slot width to 0.096 in. |
+| Oct 27, 2026 | 4.0 hrs | Step 6 | Initial writing of the assignment. | Waiting for final cut. |
+| Oct 28, 2026 | 2.0 hrs | Step 5 & 6 | Exported DXF to Inkscape (12x12 in sheet), set vector cuts, decreased speed from 20% to 15% to achieve complete cut-through, and assembled kit. | Verified firm press-fits; compiled portfolio documentation and log. |
+
+**Total Time Spent:** 10.0 hours from start to finish.
 
 ### Mistakes, Troubleshooting & Resources
 * **Mistakes & Fixes:**
