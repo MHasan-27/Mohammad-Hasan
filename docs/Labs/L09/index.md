@@ -28,7 +28,7 @@
 
 ### Parametric Proof & Engineered Allowances
 * **Parametric Equations & Proof:** All part files are tied to SolidWorks global variables (Sigma). Modifying the material thickness or clearance variable in the equations table instantly updates both extrusion depth (0.106 in) and slot gap width (0.096 in) across all components simultaneously, proving robust parametric control.
-  
+  * Parametric change shown:
  ![With Change Parameter](With%20Change%20Parameter.png)
 ![Measurement Change Once Parameter Change](Measurment%20change%20once%20paramiter%20change.png)
   
