@@ -4,6 +4,9 @@
 
 ### CAD Process & Design Decisions
 * **Part Types & Geometry:** The construction kit consists of 3 unique interlocking part profiles: a **Half Circle** (R = 1.00 in), a **Rectangle** (1.00 in x 1.50 in), and a **Triangle** (1.00 in x 1.00 in x 1.10 in).
+*  **Hand Sketch**
+  ![Lab 9 Handwritten Measurements Part 3](Lab%209-3.jpg)
+
 * **Joint Selection & Rationale:** We selected press-fit slot joints to join components perpendicularly without fasteners or glue. Initial test cuts with a 1k tolerance yielded loose fits because the laser beam vaporized material along the vector path. To fix this, we engineered an intentional interference fit by adjusting our slot width parameter to be smaller than the stock material thickness.
 * **CAD Modeling Workflow:**
   1. Sketched outer boundary profiles for the Half Circle, Rectangle, and Triangle in SolidWorks.
