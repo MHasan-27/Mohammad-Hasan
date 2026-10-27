@@ -28,6 +28,8 @@
 * **Engineered Allowances Traced to Measured Data:**
   * **Measured Thickness:** Caliper measurements across multiple points on the sheet yielded a mean thickness of T = 0.106 in (avoiding nominal 1/8" assumptions).
   * **Kerf Measurement Calculations:** Average Kerf roughly equals 0.007 in. Final Kerf allowance for 10k Tolerance was set to 0.009 to 0.010 in.
+    ![Lab 9 Handwritten Measurements Part 1](Lab%209-1.jpg)
+    ![Lab 9 Handwritten Measurements Part 2](Lab%209-2.jpg)
   * **Final Slot Sizing:** To counteract laser kerf expansion and loose fits, the final target slot width was set to 0.096 in (0.010 in tighter than the 0.106 in wood thickness).
 
 ---
