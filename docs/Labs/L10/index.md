@@ -215,3 +215,11 @@ The **0.012 in** total CAD clearance successfully compensated for physical print
    | Printing & Post-Processing   | 4.0 hrs  |
    | Measurement & Documentation  | 2.0 hr   |
    | **Total Time**               | **10.0 hrs** |
+
+## Download CAD Files & Assembly
+
+- [Download Box Part File (`Box.SLDPRT`)](Box.SLDPRT)
+- [Download Slide Part File (`Slide.SLDPRT`)](Slide.SLDPRT)
+- [Download Shaft/Pin Part File (`Shaft.SLDPRT`)](Shaft.SLDPRT)
+- [Download Complete Assembly File (`Assem Lab 10.SLDASM`)](Assem%20Lab%2010.SLDASM)
+   
