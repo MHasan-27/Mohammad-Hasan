@@ -151,28 +151,22 @@ In SolidWorks Assembly (`Assem Lab 10.SLDASM`), mechanical mates were establishe
 
 ## 3. Preprocessing for 3D Printing
 
-| Parameter              | Value                                      |
-|------------------------|--------------------------------------------|
-| Target Printer         | Formlabs Form 3+ (SLA)                     |
-| Resin Material         | Standard Clear / Grey Photopolymer Resin   |
-| Layer Resolution       | 0.050 mm (50 μm)                           |
-| Total Combined Volume  | ∼ 14.2 mL (Well within the 20 mL maximum lab constraint including support structures) |
+* **Target Printer:** Formlabs Form 4 (SLA)
+* **Resin Material:** Formlabs Grey V5 Photopolymer Resin
+* **Layer Resolution / Thickness:** 0.050 mm (50 um)
+* **Total Combined Volume:** 42.88 mL (Models: 32.97 mL, Supports: 3.47 mL, Raft: 6.44 mL)
+* **Total Print Time:** 2 h 32 m
+* **Build Orientation:**
+  * **Box, Slide, & Pin:** Positioned and tilted at optimized angles relative to the build platform to minimize peel forces, avoid suction cup entrapment in internal cavities, and prevent layer line stepping across primary sliding faces.
+* **Print Validation:** Passed all PreForm validation checks (0 Unsupported Models, 0 Minima, 0 Cups).
+* **SLA Compensation Strategy:** Because cured SLA resin undergoes 0.5% - 1.5% volumetric post-cure shrinkage along with slight XY light-bleed expansion, offset scaling was applied in PreForm to preserve the 0.012 in designed functional clearances.
 
-**Build Orientation:**
-
-- **Box:** Tilted at 30° relative to the build platform to minimize suction cup forces in the internal cavity and prevent layer line stepping across primary sliding faces.
-- **Slide & Pin:** Oriented at 45° angles to ensure uniform resin drainage during printing.
-
-**SLA Compensation Strategy:**  
-Because cured SLA resin undergoes 0.5% – 1.5% volumetric post-cure shrinkage along with slight XY light-bleed expansion, offset scaling (0.02 mm XY expansion correction) was applied in PreForm to preserve the 0.012 in designed functional clearances.
-
----
+![Printing Slide](Printing%20Slide.png)
 
 ## 4. Post-Processing
-
 1. **Wash Stage:** Parts were submerged in the Form Wash (99% Isopropyl Alcohol) for 15 minutes to clear uncured liquid resin from the internal slot and pin hole.
 2. **Support Removal:** Support touchpoints were clipped using flush cutters prior to UV curing to prevent surface gouging on functional sliding channels.
-3. **Cure Stage:** Parts were cured in the Form Cure station at 60°C for 30 minutes.
+3. **Cure Stage:** Parts were cured in the Form Cure station at 60 deg C for 30 minutes.
 4. **Surface Finishing:** Light hand-sanding with 800-grit wet sandpaper was performed on support contact stubs to maintain smooth, parallel sliding contact faces.
 
 ---
@@ -180,41 +174,40 @@ Because cured SLA resin undergoes 0.5% – 1.5% volumetric post-cure shrinkage a
 ## 5. Fit Test & Measurement Verification
 
 ### Caliper Measurement Verification
-
 Digital caliper measurements were taken across all functional features following full post-curing and cleaning:
 
-| Feature / Dimension              | Target CAD Value (in) | Caliper Measurement (in) | Deviation (in) | Status / Evaluation                  |
-|----------------------------------|-----------------------|--------------------------|----------------|--------------------------------------|
-| Box Slot Width (SW)              | 1.310                 | 1.308                    | −0.002         | Accurate slot width                  |
-| Slide Width (SW)                 | 1.290                 | 1.289                    | −0.001         | Smooth sliding motion                |
-| Box Slot Height (SH)             | 0.160                 | 0.159                    | −0.001         | Proper vertical clearance            |
-| Slide Thickness (SH)             | 0.140                 | 0.140                    | 0.000          | Nominal size achieved                |
-| Box Pin Hole Radius (Hole)       | 0.160                 | 0.159                    | −0.001         | Accurate pin location                |
-| Pin Shaft Radius (OD)            | 0.140                 | 0.141                    | +0.001         | Fits cleanly without binding         |
+| Feature / Dimension Description | Target CAD Value (in) | Caliper Measurement (in) | Deviation (in) | Status / Evaluation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Box Slot Width (`SW`)** | 1.310 | 1.308 | -0.002 | Accurate slot width |
+| **Slide Width (`SW`)** | 1.290 | 1.289 | -0.001 | Smooth sliding motion |
+| **Box Slot Height (`SH`)** | 0.160 | 0.159 | -0.001 | Proper vertical clearance |
+| **Slide Thickness (`SH`)** | 0.140 | 0.140 | 0.000 | Nominal size achieved |
+| **Box Pin Hole Radius (`Hole`)** | 0.160 | 0.159 | -0.001 | Accurate pin location |
+| **Pin Shaft Radius (`OD`)** | 0.140 | 0.141 | +0.001 | Fits cleanly without binding |
 
 ### Functional Fit Performance
-
-The **0.012 in** total CAD clearance successfully compensated for physical printing variations. The slide moves smoothly along the internal channel without wobbling or binding, and the alignment pin drops freely into the indexing port to securely lock the sliding mechanism.
+The 0.012 in total CAD clearance successfully compensated for physical printing variations. The slide moves smoothly along the internal channel without wobbling or binding, and the alignment pin drops freely into the indexing port to securely lock the sliding mechanism.
 
 ---
 
 ## 6. Lessons Learned
 
-1. **Resin Light Bleed in Enclosed Slots:**  
-   Internal channels tend to trap liquid photopolymer resin. Thorough IPA flushing with a syringe is essential before post-curing to avoid localized resin curing inside the slot.
+### Reflections on Tolerance Limits & Manufacturing Adaptation
+1. **Deviating from Standard RC 2 Limits for SLA Printing:** 
+   Standard ANSI B4.1 RC 2 machining specifications (0.00015 in - 0.00140 in theoretical clearance) are designed for subtractive metal machining. Attempting to print with these exact drawing tolerances results in total part binding and assembly failure due to SLA XY light bleed (blooming) and thermal post-cure shrinkage (0.5% - 1.5%). Applying an intentional offset of +/-0.006 in (0.012 in total CAD gap) exceeds standard RC 2 drawing limits, but it is necessary to achieve the intended physical performance—allowing parts to slide smoothly and locate accurately without seizing after post-curing.
 
-2. **Post-Cure Shrinkage Factors:**  
-   Dimensional contraction occurs during high-temperature UV post-curing. Incorporating 0.006 in CAD tolerance offsets (0.012 in total gap) ensures that tight RC 2 specifications do not convert into press fits.
+2. **Resin Light Bleed in Enclosed Slots:** 
+   Internal channels tend to trap liquid photopolymer resin due to surface tension. Thorough IPA flushing with a syringe before UV post-curing is critical to prevent uncured resin from hardening inside the sliding channel and closing up the engineered clearances.
 
 3. **Total Project Time:**
-
-   | Phase                        | Time     |
-   |------------------------------|----------|
-   | Research & Hand Sketching    | 2.0 hrs  |
-   | CAD Modeling & Equations     | 2.0 hrs  |
-   | Printing & Post-Processing   | 4.0 hrs  |
-   | Measurement & Documentation  | 2.0 hr   |
-   | **Total Time**               | **10.0 hrs** |
+   | Phase | Time |
+   | :--- | :--- |
+   | Research & Hand Sketching | 2.0 hrs |
+   | CAD Modeling & Equations | 2.0 hrs |
+   | Printing & Post-Processing | 4.0 hrs |
+   | Measurement & Documentation | 2.0 hrs |
+   | **Total Time** | **10.0 hrs** |
+ 
 
 ## Download CAD Files & Assembly
 
