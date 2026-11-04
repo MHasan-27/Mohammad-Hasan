@@ -178,27 +178,34 @@ Digital caliper measurements were taken across all functional features following
 
 | Feature / Dimension Description | Target CAD Value (in) | Caliper Measurement (in) | Deviation (in) | Status / Evaluation |
 | :--- | :--- | :--- | :--- | :--- |
-| **Box Slot Width (`SW`)** | 1.310 | 1.308 | -0.002 | Accurate slot width |
-| **Slide Width (`SW`)** | 1.290 | 1.289 | -0.001 | Smooth sliding motion |
-| **Box Slot Height (`SH`)** | 0.160 | 0.159 | -0.001 | Proper vertical clearance |
-| **Slide Thickness (`SH`)** | 0.140 | 0.140 | 0.000 | Nominal size achieved |
-| **Box Pin Hole Radius (`Hole`)** | 0.160 | 0.159 | -0.001 | Accurate pin location |
-| **Pin Shaft Radius (`OD`)** | 0.140 | 0.141 | +0.001 | Fits cleanly without binding |
+| **Box Slot Width (`SW`)** | 1.310 | 1.3055 | -0.0045 | Smooth fit, well within clearance |
+| **Slide Width (`SW`)** | 1.290 | 1.2940 | +0.0040 | Fits perfectly into box slot |
+| **Box Slot Height (`SH`)** | 0.160 | 0.1525 | -0.0075 | Internal slot height contracted |
+| **Slide Thickness (`SH`)** | 0.140 | 0.1435 | +0.0035 | Smooth vertical clearance |
+| **Box Pin Hole Radius (`Hole`)** | 0.160 | 0.1545 | -0.0055 | Hole printed slightly tight |
+| **Pin Shaft Radius (`OD`)** | 0.140 | 0.1540 | +0.0140 | Tight fit; required extra sanding |
 
 ### Functional Fit Performance
-The 0.012 in total CAD clearance successfully compensated for physical printing variations. The slide moves smoothly along the internal channel without wobbling or binding, and the alignment pin drops freely into the indexing port to securely lock the sliding mechanism.
+The slide plate mated perfectly into the box channel, sliding smoothly without binding. However, the pin shaft exhibited a tighter fit than intended. Because the pin printed slightly oversized (+0.0140 in radius deviation) and the receiving hole printed slightly smaller (-0.0055 in radius deviation), manual post-processing and sanding were necessary to smooth out the rough surface texture left behind by the support touchpoints on the shaft perimeter.
+
+![Parts demonstration](Parts%20demonstration.jpeg)
 
 ---
 
 ## 6. Lessons Learned
 
 ### Reflections on Tolerance Limits & Manufacturing Adaptation
-1. **Deviating from Standard RC 2 Limits for SLA Printing:** 
+1. **Feature Scale & Relative Tolerance Sensitivity:** 
+   Physical measurements revealed that smaller geometric features (such as the 0.140 in pin shaft radius and 0.160 in pin hole) are far more sensitive to SLA light-bleed and support artifacts than larger features. As feature dimensions decrease, the relative effect of XY blooming increases proportionally. Therefore, smaller features require a higher percentage of tolerance allowance in CAD to achieve the same functional clearance.
+
+2. **Support Placement & Orientation Optimization for Critical Fits:** 
+   Placing support touchpoints directly on functional sliding faces or cylindrical shaft surfaces creates rough surface stubs that must be sanded down, altering the part geometry and causing tight or uneven fits. To improve future prints:
+   * **Re-orient parts in PreForm** so that support touchpoint locations are strictly restricted to non-critical, non-mating exterior faces.
+   * Keep functional sliding slots, holes, and cylindrical shafts completely free of support touchpoints to preserve as-printed surface finish and eliminate manual post-processing distortion.
+
+3. **Deviating from Standard RC 2 Limits for SLA Printing:** 
    Standard ANSI B4.1 RC 2 machining specifications (0.00015 in - 0.00140 in theoretical clearance) are designed for subtractive metal machining. Attempting to print with these exact drawing tolerances results in total part binding and assembly failure due to SLA XY light bleed (blooming) and thermal post-cure shrinkage (0.5% - 1.5%). Applying an intentional offset of +/-0.006 in (0.012 in total CAD gap) exceeds standard RC 2 drawing limits, but it is necessary to achieve the intended physical performance—allowing parts to slide smoothly and locate accurately without seizing after post-curing.
-
-2. **Resin Light Bleed in Enclosed Slots:** 
-   Internal channels tend to trap liquid photopolymer resin due to surface tension. Thorough IPA flushing with a syringe before UV post-curing is critical to prevent uncured resin from hardening inside the sliding channel and closing up the engineered clearances.
-
+   
 3. **Total Project Time:**
    | Phase | Time |
    | :--- | :--- |
