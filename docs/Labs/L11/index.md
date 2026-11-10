@@ -163,6 +163,7 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 - **Hook Angles:** The sloped outer face allows the clip to slide into the box with light hand force, while the flat 90° ledge inside holds the lid closed securely until intentionally opened.
 
+The FEA simulation results confirm that maximum von Mises stress concentrates at the filleted root ($R = 0.05\text{ in}$) without exceeding the resin yield strength, while maximum displacement occurs at the snap hook tip during initial deflection.
 ![Cover Snap FEA Displacement](Cover%20snap-Static%201-Displacement-Displacement1.jpg)
 
 ![Cover Snap FEA Strain](Cover%20snap-Static%201-Strain-Strain1.jpg)
