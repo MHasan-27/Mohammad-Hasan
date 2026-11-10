@@ -101,15 +101,19 @@ The lower box housing was created in SolidWorks using a 4-step process:
 
 1. **Step 1: Main Outer Shell (Boss-Extrude1)**  
    Sketched an oval slot shape (1.00 in long by 0.75 in wide) with a 0.65 in inner boundary to set a uniform wall thickness of 0.05 in. Extruded vertically to form the outer walls.
+ ![Box Step 1](Box%20Step%201.png)
 
 2. **Step 2: Base Floor Plate (Boss-Extrude2)**  
    Sketched a solid oval matching the bottom of the walls and extruded it 0.05 in upward to close the bottom of the box.
+ ![Box Step 2](Box%20Step%202.png)
 
 3. **Step 3: Snap Engagement Slots (Cut-Extrude1)**  
    Sketched a 0.25 in × 0.25 in square on both side faces and cut through both walls. These windows serve as the locking receivers for the lid's snap hooks.
+![Box Step 3](Box%20Step%203.png)
 
 4. **Step 4: Bottom Drain Holes (Cut-Extrude2)**  
    Cut six small circular holes through the bottom floor plate.
+![Box Step 4](Box%20Step%204.png)
 
 ### Part B: Cover Lid Modeling Steps
 
@@ -200,6 +204,10 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 | Print Time    | (To be filled)           |
 | Resin Used    | (including supports)     |
 
+<video controls width="100%">
+  <source src="https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/Labs/L11/Printing%20Video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ---
 
 # (15%) Post-Processing
@@ -273,3 +281,9 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 - **Print Time:** Fast batch printing of multiple sets on the Form 4.
 - **Material Efficiency:** Used only a small volume of liquid resin (including supports), making it a low-cost print.
 - **Shared Platform:** Couldn’t find anyone to share the printer.
+
+## CAD Download Files
+* 📦 [Box Part File (Box.SLDPRT)](Box.SLDPRT)
+* 📦 [Cover Snap Lid File (Cover snap.SLDPRT)](Cover%20snap.SLDPRT)
+* ⚙️ [Assembly File (Assem1.SLDASM)](Assem1.SLDASM)
+* 🖨️ [Formlabs PreForm Print File (Snap Fit.form)](Snap%20Fit.form)
