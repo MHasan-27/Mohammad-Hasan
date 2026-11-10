@@ -304,7 +304,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 ## 4. Cost, Time, and Resource Summary
 
-- **Print Time:** Fast batch printing of 1 hour 20 minutes on the Form 4.
+- **Print Time:** Fast batch printing of 1 hour 20 minutes on the Form 4. Total 12 Hours
 - **Material Efficiency:** Used only ~18.5 mL of liquid resin (including supports), making it a low-cost print.
 - **Shared Platform:** Couldn’t find anyone to share the printer.
 
