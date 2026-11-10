@@ -221,8 +221,8 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 | Printer       | Formlabs Form 4          |
 | Resin         | Standard Gray Resin (V5) |
 | Layer Height  | 0.050 mm                 |
-| Print Time    | (To be filled)           |
-| Resin Used    | (including supports)     |
+| Print Time    | 1 hour 20 mins           |
+| Resin Used    | 18.5 ml (including supports)     |
 
 <video controls width="100%">
   <source src="https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/Labs/L11/Printing%20Video.mp4" type="video/mp4">
@@ -230,7 +230,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 </video>
 ---
 
-# (15%) Post-Processing
+#  Post-Processing
 
 ## 1. Post-Processing Steps & Timing
 
