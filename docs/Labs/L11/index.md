@@ -1,4 +1,4 @@
-###LAB 11 Snap Fit Research and Modeling Principles
+### LAB 11 Snap Fit Research and Modeling Principles
 
 ## 1. Summary of Key Design Principles
 
