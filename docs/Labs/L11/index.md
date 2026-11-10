@@ -1,4 +1,4 @@
-### LAB 11 Snap Fit Research and Modeling Principles
+### LAB 11: Snap Fit Research and Modeling Principles
 
 ## 1. Summary of Key Design Principles
 
@@ -42,33 +42,32 @@ The performance of the snap fit comes down to a few basic rules of physics:
 
 The maximum amount the material stretches (epsilon) when the clip bends sideways is calculated by:
 
-  epsilon = (3/2) * (t * y) / L^2
-
-
+epsilon = 1.5 * (h * y) / L^2
   
 Where:
-- t = Thickness of the arm at the base
+- h = Thickness of the arm at the base
 - y = How far the clip is pushed sideways (undercut depth)
 - L = Length of the flexible arm
 
 To stop the clip from bending permanently out of shape or snapping off, the stretch (epsilon) must stay below the maximum limit allowed by the material.
 
-### Push Force (F)
+### Push Force (W)
 
 The amount of hand force needed to snap the lid on depends on:
-    F = (E * w * t^3 * y) / (4 * L^3) * (mu + tan(alpha)) / (1 - mu * tan(alpha))
+
+  F = (E * w * t^3 * y) / (4 * L^3) * (mu + tan(alpha)) / (1 - mu * tan(alpha))
 
 
 Where:
 - E = How stiff the plastic is (modulus of elasticity)
-- w = Width of the clip
+- b = Width of the clip
 - alpha = Angle of the sloped hook
 - mu = Friction between the sliding plastic parts
 
 ### How Geometry Affects the Fit
 
 - **Arm Length (L):** Making the arms longer makes them much softer and easier to bend. Longer arms lower the push force and prevent cracking.
-- **Arm Thickness (t):** Making the clip thicker makes it exponentially stiffer. A small increase in thickness makes the lid much harder to snap on.
+- **Arm Thickness (h):** Making the clip thicker makes it exponentially stiffer. A small increase in thickness makes the lid much harder to snap on.
 
 ---
 
@@ -81,7 +80,7 @@ Printing this design on a Form 4 SLA printer using resin requires specific desig
 - **Design Adjustments for Resin:**
   - **Longer, Slender Clips:** The arms are designed longer (L) so they bend gradually without over-stretching the material.
   - **Generous Base Curves:** Extra rounded fillets are added to the root of the arm because 3D printed resin is sensitive to sharp notches.
-  - **Clearance Gap:** A small space (0.005 in to 0.010 in) is left between the clip and the box slot so the parts slide smoothly together without jamming.
+  - **Clearance Gap:** A small space (~0.015 to 0.025 in) is left between the clip and the box slot so the parts slide smoothly together without jamming.
 
 ---
 
@@ -101,7 +100,7 @@ Printing this design on a Form 4 SLA printer using resin requires specific desig
 The lower box housing was created in SolidWorks using a 4-step process:
 
 1. **Step 1: Main Outer Shell (Boss-Extrude1)**  
-   Sketched an oval slot shape (1.00 in long by 0.75 in wide) with a 0.65 in inner boundary to set a uniform wall thickness of 0.05 in. Extruded vertically to form the outer walls.
+   Sketched an oval slot shape (1.00 in long by 0.75 in wide) with a 0.65 in inner boundary to set a uniform wall thickness of 0.05 in (1.27 mm). Extruded vertically to form the outer walls.
  ![Box Step 1](Box%20Step%201.png)
 
 2. **Step 2: Base Floor Plate (Boss-Extrude2)**  
@@ -174,11 +173,12 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 - **Drain Holes:** The 6 floor holes (Cut-Extrude2) prevent suction forces on the Form 4 printer bed and allow uncured liquid resin to drain cleanly out during washing.
 
-- **Clearance Gaps:** A clear space of 0.005 in to 0.010 in was designed between the box slot and the lid clips so SLA resin parts can slide together smoothly without binding or sticking.
+- **Clearance Gaps:** A clear space of 0.005 in to 0.010 in (0.12 mm – 0.25 mm) was designed between the box slot and the lid clips so SLA resin parts can slide together smoothly without binding or sticking.
 
 ### C. Separable Assembly Design
 
 The snap hooks lock directly into open window slots cut through the side walls. To separate the lid from the box, a user can press the exposed hook tips inward through the window slots while lifting up on the side thumb tabs.
+
 
 ![Assemble Crosssection View on Clip or snap fit location](Assemble%20Crosssection%20View%20on%20Clip%20or%20snap%20fit%20location.png)
 
@@ -204,25 +204,25 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 - **Layout:** The Box and Lid were placed side-by-side with a 15–20 mm gap, allowing 2 to 3 student project sets to fit on a single shared build plate.
 - **Supports:** Auto-generated light supports (0.40 mm touchpoints) placed under key overhangs and hook edges.
-- **Wall Thickness:** 0.05 in to keep the box walls from bulging.
-- **Layer Resolution:** 0.050 mm.
+- **Wall Thickness:** 0.05 in (1.27 mm) to keep the box walls from bulging.
+- **Layer Resolution:** 0.050 mm (50 μm).
 ![Printing Slide](Printing%20Slide.png)
 ![Printing Slide Supports](Printing%20Slide%20supports.png)
 
 ## 4. Resin Isotropy & Clearance
 
 - **Isotropic Strength:** SLA resin cures chemically across layer lines, making the snap arms equally strong in all bending directions (unlike weaker, layer-dependent FDM prints).
-- **Clearance Gap:** A gap of 0.005 in to 0.010 in was added around the hook and slot to ensure parts slide together without sticking.
+- **Clearance Gap:** A gap of 0.005 in to 0.010 in (0.12 mm – 0.25 mm) was added around the hook and slot to ensure parts slide together without sticking.
 
 ## 5. Slicer Summary Table
 
-| Parameter     | Value                    |
-|---------------|--------------------------|
-| Printer       | Formlabs Form 4          |
-| Resin         | Standard Gray Resin (V5) |
-| Layer Height  | 0.050 mm                 |
-| Print Time    | 1 hour 20 mins           |
-| Resin Used    | 18.5 ml (including supports)     |
+| Parameter     | Value                          |
+|---------------|--------------------------------|
+| Printer       | Formlabs Form 4                |
+| Resin         | Standard Gray Resin (V5)       |
+| Layer Height  | 0.050 mm (50 μm)               |
+| Print Time    | 1 Hour 20 Mins                 |
+| Resin Used    | ~18.5 mL (including supports)  |
 
 <video controls width="100%">
   <source src="https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/Labs/L11/Printing%20Video.mp4" type="video/mp4">
@@ -230,7 +230,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 </video>
 ---
 
-#  Post-Processing
+# Post-Processing
 
 ## 1. Post-Processing Steps & Timing
 
@@ -238,7 +238,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 |--------------------|-----------------------------------------|-------------------|
 | 1. Wash            | Form Wash (99% Isopropyl Alcohol - IPA) | 10 mins           |
 | 2. Dry             | Air blow-dry & bench dry                | 15 mins           |
-| 3. Cure            | Form Cure UV chamber                    | 15 mins at 60°C   |
+| 3. Cure            | Form Cure UV chamber (60°C)             | 15 mins at 60°C   |
 | 4. Support Removal | Flush cutters & tweezers                | 5 mins            |
 | 5. Finishing       | No Sanding needed                       | —                 |
 
@@ -264,7 +264,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 ## 2. Applied SLA Clearances
 
-- **Tolerance Applied:** Using empirical tolerance findings learned from Lab 10, a clearance gap of 0.005 in to 0.010 in was applied between the sliding snap arms and the box walls.
+- **Tolerance Applied:** Using empirical tolerance findings learned from Lab 10, a clearance gap of 0.015 to 0.025 in (0.38 – 0.63 mm) was applied between the sliding snap arms and the box walls.
 
 - **Result:** This clearance offset perfectly accounted for SLA resin light bleed and liquid swelling, allowing the parts to slide and lock together seamlessly on the first print attempt.
 
@@ -285,11 +285,11 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 - **Material Stiffness:** SLA Formlabs resin is stiffer and more brittle than standard FDM plastics (like PLA or ABS). Designing short or thick snap arms risks snapping the clips under bending load.
 
-- **Finding the Balance:** The main design challenge was making the cantilever arms long (L ≈ 0.27 in) and tapered down (from 0.03 in to 0.010 in) so they could flex enough to clear the undercut without exceeding the resin's low strain limit.
+- **Finding the Balance:** The main design challenge was making the cantilever arms long (0.27 in) and tapered down (0.030 in → 0.010 in) so they could flex enough to clear the undercut without exceeding the resin's low strain limit.
 
 ## 2. SLA Tolerances & Print Orientation
 
-- **Tolerance Control:** SLA printing provides high detail, but resin swelling requires an empirical offset of 0.005–0.010 in for sliding fits.
+- **Tolerance Control:** SLA printing provides high detail, but resin swelling requires an empirical offset of 0.015 in – 0.025 in for sliding fits.
 
 - **Orientation Matters:** Printing parts at a 45° tilt prevents suction cup forces on hollow box bodies, improves surface smoothness on hooks, and places support mark nubs on hidden bottom edges.
 
@@ -303,8 +303,8 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 ## 4. Cost, Time, and Resource Summary
 
-- **Print Time:** Fast batch printing of multiple sets on the Form 4.
-- **Material Efficiency:** Used only a small volume of liquid resin (including supports), making it a low-cost print.
+- **Print Time:** Fast batch printing of 1 hour 20 minutes on the Form 4.
+- **Material Efficiency:** Used only ~18.5 mL of liquid resin (including supports), making it a low-cost print.
 - **Shared Platform:** Couldn’t find anyone to share the printer.
 
 ## CAD Download Files
