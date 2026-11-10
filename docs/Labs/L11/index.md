@@ -212,7 +212,7 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 ## 4. Resin Isotropy & Clearance
 
 - **Isotropic Strength:** SLA resin cures chemically across layer lines, making the snap arms equally strong in all bending directions (unlike weaker, layer-dependent FDM prints).
-- **Clearance Gap:** A gap of 0.005 in to 0.010 in (0.12 mm – 0.25 mm) was added around the hook and slot to ensure parts slide together without sticking.
+- **Clearance Gap:** A gap of 0.02 in was added around the hook and slot to ensure parts slide together without sticking.
 
 ## 5. Slicer Summary Table
 
