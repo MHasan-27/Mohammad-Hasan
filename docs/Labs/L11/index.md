@@ -19,6 +19,7 @@ Key design principles used from the *Snap-Fit Joints for Plastics* guide include
 ## 2. Main Design Features and Visual Breakdown
 
 The shape of the snap fit handles bending and force through three key geometric features:
+![Lab 11](Lab%2011.png)
 
 **Important Features Shown in the CAD Model:**
 
@@ -121,27 +122,35 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 1. **Step 1: Base Lid Plate (Boss-Extrude1)**  
    Sketched an oval matching the box dimensions (1.00 in × 0.75 in) and extruded it 0.05 in thick.
+![Cover Snap Step 1](Cover%20Snap%20Step%201.png)
 
 2. **Step 2: Snap Arm Block (Boss-Extrude2)**  
    Sketched a 0.25 in × 0.15 in rectangle on the underside of the lid and extruded it up by 0.47 in to create material for the clip arm.
+![Cover Snap Step 2](Cover%20Snap%20Step%202.png)
 
 3. **Step 3: Shaping the Hook Profile (Cut-Extrude1)**  
    Cut the side profile of the block to define the clip geometry: an arm length of 0.27 in, a hook overhang (undercut) of 0.05 in, and a tapered wall thickness going from 0.03 in down to 0.010 in near the tip.
+![Cover Snap Step 3](Cover%20Snap%20Step%203.png)
 
 4. **Step 4: Mirroring Second Arm (Mirror1)**  
    Mirrored the finished snap arm across the center plane to create the matching clip on the opposite side.
+![Cover Snap Step 4](Cover%20Snap%20Step%204.png)
 
 5. **Step 5: Side Thumb Tab (Boss-Extrude3)**  
    Extruded a small 0.15 in tab extending outward from the edge of the lid plate to create a finger grip for easy removal.
+![Cover Snap Step 5](Cover%20Snap%20Step%205.png)
 
 6. **Step 6: Base Fillets (Fillet1)**  
    Added a smooth R 0.05 in fillet curve at the root base where the snap arms attach to the lid.
+![Cover Snap Step 6](Cover%20Snap%20Step%206.png)
 
 7. **Step 7: Mirroring Second Thumb Tab (Mirror4)**  
    Mirrored the thumb tab to the opposite side of the lid.
+![Cover Snap Step 7](Cover%20Snap%20Step%207.png)
 
 8. **Step 8: Outer Edge Fillets (Fillet2 & Fillet3)**  
    Applied an R 0.10 in fillet to round off the sharp outer edges of the thumb tabs and top plate.
+![Cover Snap Step 8](Cover%20Snap%20Step%208.png)
 
 ---
 
@@ -155,6 +164,12 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 - **Hook Angles:** The sloped outer face allows the clip to slide into the box with light hand force, while the flat 90° ledge inside holds the lid closed securely until intentionally opened.
 
+![Cover Snap FEA Displacement](Cover%20snap-Static%201-Displacement-Displacement1.jpg)
+
+![Cover Snap FEA Strain](Cover%20snap-Static%201-Strain-Strain1.jpg)
+
+![Cover Snap FEA Stress](Cover%20snap-Static%201-Stress-Stress1.jpg)
+
 ### B. SLA Printing Adjustments & Clearances
 
 - **Drain Holes:** The 6 floor holes (Cut-Extrude2) prevent suction forces on the Form 4 printer bed and allow uncured liquid resin to drain cleanly out during washing.
@@ -165,6 +180,9 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 The snap hooks lock directly into open window slots cut through the side walls. To separate the lid from the box, a user can press the exposed hook tips inward through the window slots while lifting up on the side thumb tabs.
 
+![Assemble Crosssection View on Clip or snap fit location](Assemble%20Crosssection%20View%20on%20Clip%20or%20snap%20fit%20location.png)
+
+![Assemble Distance Between clip to box slot](Assemble%20Distance%20Between%20clip%20to%20box%20slot.png)
 ---
 
 # Preprocessing and 3D Printing
@@ -188,6 +206,8 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 - **Supports:** Auto-generated light supports (0.40 mm touchpoints) placed under key overhangs and hook edges.
 - **Wall Thickness:** 0.05 in to keep the box walls from bulging.
 - **Layer Resolution:** 0.050 mm.
+![Printing Slide](Printing%20Slide.png)
+![Printing Slide Supports](Printing%20Slide%20supports.png)
 
 ## 4. Resin Isotropy & Clearance
 
@@ -250,7 +270,12 @@ The snap hooks lock directly into open window slots cut through the side walls. 
 
 ## 3. Assembled Artifact Proof
 
-*(Insert photo or screenshot of assembled parts here)*
+![Printed Parts Back](Printed%20Parts%20Back.jpeg)
+
+![Printed Parts Front](Printed%20Parts%20Front%20.jpeg)
+
+![Printed Parts Isometric Assemble view](Printed%20Parts%20Isometric%20Assemble%20view.jpeg)
+
 
 ---
 
