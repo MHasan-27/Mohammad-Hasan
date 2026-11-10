@@ -173,7 +173,7 @@ The top cover plate and internal snap clips were created using an 8-step process
 
 - **Drain Holes:** The 6 floor holes (Cut-Extrude2) prevent suction forces on the Form 4 printer bed and allow uncured liquid resin to drain cleanly out during washing.
 
-- **Clearance Gaps:** A clear space of 0.005 in to 0.010 in (0.12 mm – 0.25 mm) was designed between the box slot and the lid clips so SLA resin parts can slide together smoothly without binding or sticking.
+- **Clearance Gaps:** A clear space of 0.02 in was designed between the box slot and the lid clips so SLA resin parts can slide together smoothly without binding or sticking.
 
 ### C. Separable Assembly Design
 
