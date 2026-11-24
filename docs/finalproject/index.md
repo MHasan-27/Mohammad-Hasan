@@ -95,7 +95,11 @@ To validate the mechanical joints and printed threads before scaling up to the f
 
 ## 6. Video Presentation (30-Second Script)
 
-**Video Link:** Add video link.
+
+
+https://github.com/user-attachments/assets/2b68f9a4-b7e8-46f6-a19d-79e1526075f0
+
+
 
 ---
 
@@ -118,8 +122,13 @@ To validate the mechanical joints and printed threads before scaling up to the f
 ### 7.1 CAD Modeling and Design Steps (3 Components)
 
 1. **Part 1:** Main Mounting Frame
+   <img width="975" height="620" alt="image" src="https://github.com/user-attachments/assets/9ca753b3-865f-436f-aa9b-d0877a673898" />
+
 2. **Part 2:** Single-Slot Cable Holder and Lock Slide
+   <img width="974" height="565" alt="image" src="https://github.com/user-attachments/assets/f1f284a7-e396-4a96-9302-9880c29e97b3" />
+
 3. **Part 3:** 3/8"-16 UNC Clamping Screw
+<img width="974" height="625" alt="image" src="https://github.com/user-attachments/assets/d94314b2-384b-41b1-a2e8-8a52ec7139f1" />
 
 ---
 
@@ -135,7 +144,16 @@ To validate the mechanical joints and printed threads before scaling up to the f
 
 ## 1. Peer Feedback and Individual Reflections
 
-**[Insert Images: Scanned/Photographed Peer Feedback Worksheets from Brayan, Derek, and Noah]**
+<img width="768" height="1024" alt="Brayan_Page 1" src="https://github.com/user-attachments/assets/ec38b286-6d9d-4b40-8068-e1636263df1d" />
+<img width="768" height="1024" alt="Brayan_Page 2" src="https://github.com/user-attachments/assets/6a4c299c-07b6-48a7-af7a-ae66b8fddb82" />
+
+<img width="768" height="1024" alt="Derek_Page 1" src="https://github.com/user-attachments/assets/34e3c703-7cfe-4ae6-8b7d-d3deba7fe685" />
+<img width="768" height="1024" alt="Derek_Page 2" src="https://github.com/user-attachments/assets/9059f46c-93f5-4b93-a7bb-9d1e2378c476" />
+
+<img width="768" height="1024" alt="Noah_Page 1" src="https://github.com/user-attachments/assets/e32cc7a8-43db-420b-b6b1-92b1ff2ed2b3" />
+<img width="768" height="1024" alt="Noah_Page 2" src="https://github.com/user-attachments/assets/ff0f664d-a9fa-4e30-8906-a775f73600d4" />
+
+
 
 ### 1.1 Individual Reflections on Peer Feedback
 
@@ -174,6 +192,7 @@ To find the ideal press-fit between the FDM lock slide and the SLA base slot, I 
 | Final Fit | −0.010 in (−10k) | 0.5400 in | 0.5235 in | Optimal press-fit. |
 
 **Optimal Press-Fit:** Creates a 0.0075 in interference fit against the 0.5160 in SLA base slot, locking securely in place.
+<img width="976" height="731" alt="image" src="https://github.com/user-attachments/assets/9d2042e2-c040-4d92-91b3-f3e2632d4711" />
 
 ---
 
@@ -182,39 +201,57 @@ To find the ideal press-fit between the FDM lock slide and the SLA base slot, I 
 ### 3.1 Design Steps: Cable Holding Base (SolidWorks)
 
 1. **Base Block Extrusion (Boss-Extrude1):** Sketch a 1.50 in × 1.75 in rectangle and extrude it 2.00 in blind to form the main block.
+<img width="975" height="680" alt="image" src="https://github.com/user-attachments/assets/ba83dd27-c3fb-401d-90dd-91caf98561c5" />
 
 2. **Desk Clamp Jaw Cutout (Cut-Extrude1):** Sketch a 0.50 in wide pocket offset 0.25 in from the top and 0.25 in from the bottom, then cut Up To Next to create the C-clamp opening for the desk edge.
+<img width="975" height="599" alt="image" src="https://github.com/user-attachments/assets/5ca774ec-155a-425e-857c-5c68bdad6c1b" />
 
 3. **Cable Channel Opening (Cut-Extrude2):** Sketch a Ø0.33 in profile and cut Up To Next to form the vertical cable pass-through channel.
+<img width="975" height="655" alt="image" src="https://github.com/user-attachments/assets/7d26d206-1426-43ae-9007-58540bffd0e8" />
 
 4. **Parametric Slot and Gap Control ("G" and Cut-Extrude3):** Create global variable "G" = 0.08 (0.08 in) in Equations to control the maximum slot gap, link sketch dimensions (D1@Sketch4 through D5@Sketch4) to "G", and extrude-cut 1.25 in blind to shape the lock-slide slot.
+<img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/e9aeef08-a4f8-4483-ba4d-7974fb9b315e" />
 
 5. **Clamp Screw Holes (Cut-Extrude4):** On the bottom clamp jaw (offset 1.00 in), sketch two Ø0.43 in holes spaced 0.50 in from the top and bottom edges and cut Up To Next.
+<img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/2911bfbf-0b41-4b77-9bca-66d572d6689c" />
 
 6. **Thread Feature (Thread1 / Thread2):** Add threads to the clamping screw holes (configured in SolidWorks using Extrude thread, Up To Selection with a 0.03 in offset) for the desk clamping screws.
+<img width="975" height="631" alt="image" src="https://github.com/user-attachments/assets/2541c8de-48c1-4c0c-a865-ae4b0c3d4ba5" />
 
 7. **Linear Pattern Expansion (LPattern2 and LPattern3):** Pattern the slot, cable channel, and clamp features linearly to expand the single-slot test base into a 3-slot Cable Holding Base for the final assembly.
+<img width="975" height="574" alt="image" src="https://github.com/user-attachments/assets/76161ee7-5d6b-4370-a882-5632c664813e" />
 
 ### 3.2 CAD Assembly
+<img width="975" height="567" alt="image" src="https://github.com/user-attachments/assets/fefc8f94-c3f0-46de-b69a-738f3012a258" />
 
 #### Component Overview
 
 - **3-Slot Mounting Base (SLA):** Clamps onto desk edges up to 1.5 in thick and houses three cable channels with precision mating slots.
 - **3/8"-16 UNC Clamping Screw (SLA):** Threads smoothly into the mounting base to lock the frame securely onto the desk corner without stripping.
 - **Lock Slides (FDM):** Custom-toleranced inserts (0.5235 in actual width) that press-fit into the base slots to trap and organize individual cables.
+<img width="975" height="732" alt="image" src="https://github.com/user-attachments/assets/79df76d9-ff59-404e-b630-21aecc41aff9" />
 
 ### 3.3 Assembly and Use Instructions
 
 1. **Mount the Base:** Slide the C-clamp frame onto the edge or corner of your desk (up to 1.5 in thick) and hand-tighten the 3/8"-16 UNC clamping screw until secure.
+<img width="975" height="1299" alt="image" src="https://github.com/user-attachments/assets/6fa83f39-fadf-405e-951b-f911e72b0a6f" />
+
 2. **Thread the Cable:** Insert the cable through the opening inside the Lock Slide.
+  <img width="975" height="732" alt="image" src="https://github.com/user-attachments/assets/a044449f-187f-4d79-baa2-cbc59ecc36f2" />
+
 3. **Position in Base:** Place the cable and lock slide down into an open slot on the Cable Holding Base.
+  <img width="426" height="567" alt="image" src="https://github.com/user-attachments/assets/5d27db60-b39a-4a16-b2fe-556e6b9fd660" />
+
 4. **Lock in Place:** Align the lock slide rails with the base slot grooves and press firmly downward until the press-fit seats flush.
+<img width="518" height="691" alt="image" src="https://github.com/user-attachments/assets/ebfac129-7ade-4921-8b44-feae791c071a" />
 
 ---
 
 ## 4. Presentation Preparation (One-Slide and 1-Minute Pitch)
 
-**[Insert One-Slide Presentation and 1-Minute Pitch]**
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/3e42901c-11e0-47f7-a2e7-9aefde0f8c94" />
+
+
 
 ---
 
@@ -225,10 +262,17 @@ To make the slot clearance easy to adjust across design iterations without manua
 - **Global Variable ("G"):** Defined "G" = 0.08 (0.08 in) in the SolidWorks Equations Manager to govern the maximum internal gap inside the lock-slide slot.
 - **Linked Sketch Dimensions:** Linked five critical slot dimensions (D1@Sketch4 through D5@Sketch4) directly to "G". Updating "G" automatically updates the entire slot profile symmetrically across all three patterned slots.
 
+<img width="975" height="262" alt="image" src="https://github.com/user-attachments/assets/335a7d6a-aaae-4598-9724-275b91a256b1" />
+
+
 ---
 
 ## 6. Final Video (1–2 Minute Script and Shot List)
 
-**Video Link:** Add video link.
 
-**[Insert Final Video Script and Shot List]**
+
+
+https://github.com/user-attachments/assets/842dcf27-3987-401c-8454-8d575cda9f1b
+
+
+
