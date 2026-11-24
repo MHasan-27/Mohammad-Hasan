@@ -231,7 +231,56 @@ To find the ideal press-fit between the FDM lock slide and the SLA base slot, I 
 - **Lock Slides (FDM):** Custom-toleranced inserts (0.5235 in actual width) that press-fit into the base slots to trap and organize individual cables.
 <img width="975" height="732" alt="image" src="https://github.com/user-attachments/assets/79df76d9-ff59-404e-b630-21aecc41aff9" />
 
-### 3.3 Assembly and Use Instructions
+### 3.3 SLA Printing Process (Formlabs PreForm and Form 4)
+
+To ensure high dimensional accuracy and smooth, durable threads, the **two 3-slot Cable Holding Bases** and **four Clamping Screws** were prepared in **Formlabs PreForm** for the **Form 4** printer.
+
+#### 1. Build Plate Layout and Orientation
+
+- **Parts Printed:** 2× Cable Holding Bases (3-slot) and 4× Threaded Clamping Screws arranged compactly within the allowed ≤ 1/4 build plate footprint.
+- **Part Orientation:** All components were angled slightly off vertical on rafts so overhangs self-support and resin drains cleanly without trapping cups.
+- <img width="1226" height="812" alt="Isometric view" src="https://github.com/user-attachments/assets/cb8722b0-a0d6-4027-8af0-19fbaa3d861c" />
+
+
+#### 2. Support Strategy and Critical Feature Protection
+
+Using PreForm's support tools (`0.60 mm` touchpoint size, `1.00` overhang density at `18.00°` angle, `1.39` stabilization density, and internal supports disabled on critical mating zones), supports were placed strictly on non-functional exterior surfaces:
+
+- **No Supports on Slide Slots:** The three cable-locking slots were oriented upward and kept completely free of support touchpoints to preserve the exact **0.5160 in** slot width needed for the FDM lock-slide press-fit.
+- **No Supports on Male Screw Threads:** The clamping screws were supported exclusively beneath their hex heads, leaving the external threads clean and smooth.
+- **No Supports Inside Base Threads:** Internal threads inside the base clamp jaw were kept clear of support pillars to prevent thread damage or binding.
+- <img width="1355" height="947" alt="Supports Settings" src="https://github.com/user-attachments/assets/d3cb7c2d-7fc1-4638-b454-a25eb564f7ac" />
+
+- <img width="692" height="815" alt="No Support On Slide slots" src="https://github.com/user-attachments/assets/3f2e00b4-b9a2-44a5-844f-07e8f776ad7d" />
+
+- <img width="709" height="477" alt="No Supports on Screw Thread " src="https://github.com/user-attachments/assets/c32745a5-8aec-41c7-9884-ca3bb0ff1c26" />
+
+- <img width="934" height="794" alt="No supports on Thread at the house " src="https://github.com/user-attachments/assets/df3f389b-ec0e-456b-a3ec-2447ed0bb732" />
+
+
+#### 3. Print Validation and Summary
+
+PreForm print validation passed with zero **Undersupported Models**, **Minima**, or **Cups**.
+
+| Print Parameter | Value |
+|---|---|
+| Estimated Print Time | Approximately 3 h 35 m |
+| Total Resin Volume | 108.93 mL |
+| Model Resin Volume | 78.73 mL |
+| Support Resin Volume | 15.41 mL |
+| Raft Resin Volume | 14.79 mL |
+| Total Touchpoints | 556 |
+| Total Layers | 1,180 |
+
+-<img width="221" height="368" alt="Printing Summary" src="https://github.com/user-attachments/assets/c19a6862-a554-439b-b4e2-c73d6a18a940" />
+
+
+#### 4. Post-Processing
+
+After printing on the Form 4, parts were washed in isopropyl alcohol (IPA) to remove uncured resin, air-dried, UV post-cured according to Formlabs resin specifications, and carefully removed from their rafts before testing thread engagement and press-fit tolerances.
+
+
+### 3.4 Assembly and Use Instructions
 
 1. **Mount the Base:** Slide the C-clamp frame onto the edge or corner of your desk (up to 1.5 in thick) and hand-tighten the 3/8"-16 UNC clamping screw until secure.
 <img width="975" height="1299" alt="image" src="https://github.com/user-attachments/assets/6fa83f39-fadf-405e-951b-f911e72b0a6f" />
