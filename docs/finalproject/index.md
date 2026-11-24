@@ -319,9 +319,44 @@ To make the slot clearance easy to adjust across design iterations without manua
 ## 6. Final Video (1–2 Minute Script and Shot List)
 
 
-
-
 https://github.com/user-attachments/assets/842dcf27-3987-401c-8454-8d575cda9f1b
 
+## Project Downloads & Resources
 
+### CAD Models & Assembly Files (SolidWorks)
+* [Cable Holding Base (3 Slots) (.SLDPRT)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Cable%20Holding%20Base%203%20slots.SLDPRT)
+* [Cable Holding Base Prototype (.SLDPRT)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Cable%20Holding%20Base%20Prototype.SLDPRT)
+* [Lock Slide (.SLDPRT)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Lock%20Slide.SLDPRT)
+* [Clamping Screw (.SLDPRT)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Screw.SLDPRT)
+* [Complete Cable Organizer Assembly (.SLDASM)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Cable%20organizer%20Assembly.SLDASM)
+
+### 3D Printing & Slicing Files
+* [Formlabs PreForm SLA Print File — Base & Screws (.form)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/SLA%20Lab%20Final%20Project%20House%20and%20Screw.form)
+
+### Presentation & Videos
+* [One-Slide Project Summary (.pptx)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Desk_Cable_Management_Detailed_One_Slide.pptx)
+* [Part 1 Video — Problem & Initial Concept (.mp4)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Part%201.mp4)
+* [Part 2 Video — Prototype Refinement & Demo (.mp4)](https://github.com/MHasan-27/Mohammad-Hasan/raw/main/docs/finalproject/Part%202.mp4)
+
+---
+
+### References & Resources
+1. **NASA Software Engineering Handbook.** *Standard Spiral Life Cycle.*  
+   https://swehb.nasa.gov/spaces/7150/pages/16449735/SWE-019+-+Software+Life+Cycle
+2. **Wiley (2026).** *Optimization of Process Parameters and Materials Selection in FDM: A Review.*  
+   https://onlinelibrary.wiley.com/doi/10.1002/app.70695
+3. **Formlabs.** *Form 4 Design Guide.*  
+   https://formlabs.com/white-papers/form-4-design-guide/
+4. **Formlabs.** *Introduction to Post-Curing Prints.*  
+   https://formlabs.com/support/Introduction-to-Post-Curing-Prints/
+5. **Formlabs.** *Fit Tuning for Form 4 and Form 4L Generation.*  
+   https://formlabs.com/support/Fit-Tuning-Form-4-and-Form-4L-generation/
+6. **BRM Lasers.** *Kerf and Kerf Compensation.*  
+   https://support.brmlasers.com/en/materials-and-parameters/materials/kerf-and-kerf-compensation
+7. **Xometry.** *Design Guidelines for Cut Features.*  
+   https://xometry.eu/wp-content/uploads/2023/07/EN-Sheet-Cutting-Design-Guide.pdf
+8. **ASME.** *ANSI/ASME B1.1 — Unified Inch Screw Threads (UN and UNR Thread Form).*
+9. **ASME.** *ANSI/ASME B4.1 — Preferred Limits and Fits for Cylindrical Parts.*
+10. **GitHub Project Repository.** *Full Project Folder (`MHasan-27/Mohammad-Hasan`).*  
+    https://github.com/MHasan-27/Mohammad-Hasan/tree/main/docs/finalproject
 
